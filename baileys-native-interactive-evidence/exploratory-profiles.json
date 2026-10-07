@@ -1,0 +1,5285 @@
+{
+  "libraryRevision": "0af2386292907f7d9742d8d41f830d8c48208fa1",
+  "testDatesUtc": [
+    "2026-10-06",
+    "2026-10-07"
+  ],
+  "renderingEvidence": "Human observations; account and client build numbers were not recorded",
+  "normalization": "Application labels and option-ID prefixes renamed consistently; transport IDs retained. Secrets, recipient hashes and media metadata in structural fixtures are synthetic replacements. Fixtures are not captured server echoes.",
+  "externalApplicationDependencies": false,
+  "fixtures": [
+    {
+      "key": "N12:DIRECT:native-render-bot-control-candidates.mjs",
+      "sampleId": "N12",
+      "carrier": "DIRECT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "interactiveMessage": {
+          "body": {
+            "text": "N12 · Controle de botões. PRIMEIRO NO iOS: toque Teste iOS e confira se a escolha é enviada. Ainda não selecione no Web."
+          },
+          "footer": {
+            "text": "Native · novo ensaio autorizado"
+          },
+          "nativeFlowMessage": {
+            "buttons": [
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\"Teste iOS\",\"id\":\"sample_N12_ios\"}"
+              },
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\"Teste Web\",\"id\":\"sample_N12_web\"}"
+              }
+            ],
+            "messageParamsJson": "{\"from\":\"api\",\"templateId\":\"0673c0ec-7ff3-42fe-ae12-410122163cb5\"}"
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "bot",
+          "attrs": {
+            "biz_bot": "1"
+          }
+        }
+      ]
+    },
+    {
+      "key": "N01:DIRECT:native-render-candidates.mjs",
+      "sampleId": "N01",
+      "carrier": "DIRECT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "interactiveMessage": {
+          "body": {
+            "text": "N01 · Botões nativos. No iOS, escolha Teste iOS. No WhatsApp Web, escolha Teste Web. Confira se a escolha realmente é enviada."
+          },
+          "footer": {
+            "text": "Native · novo ensaio autorizado"
+          },
+          "nativeFlowMessage": {
+            "buttons": [
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\"Teste iOS\",\"id\":\"sample_N01_ios\"}"
+              },
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\"Teste Web\",\"id\":\"sample_N01_web\"}"
+              }
+            ],
+            "messageParamsJson": "{\"from\":\"api\",\"templateId\":\"f2bb96aa-e210-419c-99fb-0112e5654ce9\"}"
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N02:DIRECT:native-render-candidates.mjs",
+      "sampleId": "N02",
+      "carrier": "DIRECT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "interactiveMessage": {
+          "header": {
+            "imageMessage": {
+              "url": "https://example.invalid/fixtures/card-1.enc",
+              "mimetype": "image/jpeg",
+              "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+              "fileLength": 1,
+              "height": 512,
+              "width": 512,
+              "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+              "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+              "directPath": "/fixtures/card-1.enc"
+            },
+            "hasMediaAttachment": true
+          },
+          "body": {
+            "text": "N02 · Card com imagem e opções. Confira a imagem azul. Escolha Teste iOS no celular e Teste Web no Web; confira o envio da escolha."
+          },
+          "footer": {
+            "text": "Native · novo ensaio autorizado"
+          },
+          "nativeFlowMessage": {
+            "buttons": [
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\"Teste iOS\",\"id\":\"sample_N02_ios\"}"
+              },
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\"Teste Web\",\"id\":\"sample_N02_web\"}"
+              }
+            ],
+            "messageParamsJson": "{\"from\":\"api\",\"templateId\":\"71032e62-50e2-40ca-a2d3-3b9806f54330\"}"
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N03:DIRECT:native-render-candidates.mjs",
+      "sampleId": "N03",
+      "carrier": "DIRECT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "interactiveMessage": {
+          "body": {
+            "text": "N03 · Botão de URL. No iOS e no WhatsApp Web, toque Abrir Baileys e confira se o repositório no GitHub abre."
+          },
+          "footer": {
+            "text": "Native · novo ensaio autorizado"
+          },
+          "nativeFlowMessage": {
+            "buttons": [
+              {
+                "name": "cta_url",
+                "buttonParamsJson": "{\"display_text\":\"Abrir Baileys\",\"url\":\"https://github.com/WhiskeySockets/Baileys\",\"merchant_url\":\"https://github.com/WhiskeySockets/Baileys\"}"
+              }
+            ],
+            "messageParamsJson": "{\"from\":\"api\",\"templateId\":\"d6e27cf9-0291-49cd-a6f2-21e0dd52679e\"}"
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N04:DIRECT:native-render-candidates.mjs",
+      "sampleId": "N04",
+      "carrier": "DIRECT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "listMessage",
+      "message": {
+        "listMessage": {
+          "title": "N04 · Lista de opções",
+          "description": "Abra Escolher opção. Escolha Teste iOS no celular e Teste Web no WhatsApp Web. Confira se a escolha é enviada.",
+          "buttonText": "Escolher opção",
+          "listType": "SINGLE_SELECT",
+          "sections": [
+            {
+              "title": "Opções de teste",
+              "rows": [
+                {
+                  "title": "Teste iOS",
+                  "description": "Selecione no celular",
+                  "rowId": "sample_N04_ios"
+                },
+                {
+                  "title": "Teste Web",
+                  "description": "Selecione no WhatsApp Web",
+                  "rowId": "sample_N04_web"
+                }
+              ]
+            }
+          ],
+          "footerText": "Native · novo ensaio autorizado"
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "list",
+              "attrs": {
+                "type": "product_list",
+                "v": "2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N05:DIRECT:native-render-candidates.mjs",
+      "sampleId": "N05",
+      "carrier": "DIRECT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "interactiveMessage": {
+          "body": {
+            "text": "N05 · Carrossel nativo. Confira duas imagens: cartão 1 azul e cartão 2 laranja. Navegue pelos cartões nos dois clientes. Escolha cartão 1 no iOS e cartão 2 no Web; confira o envio da escolha."
+          },
+          "carouselMessage": {
+            "cards": [
+              {
+                "header": {
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-1.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-1.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N05 · Cartão 1"
+                },
+                "footer": {
+                  "text": "Native · novo ensaio autorizado"
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 1\",\"id\":\"sample_N05_1\"}"
+                    }
+                  ]
+                }
+              },
+              {
+                "header": {
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-2.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-2.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N05 · Cartão 2"
+                },
+                "footer": {
+                  "text": "Native · novo ensaio autorizado"
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 2\",\"id\":\"sample_N05_2\"}"
+                    }
+                  ]
+                }
+              }
+            ],
+            "messageVersion": 1
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N45:AKANO_PREWRAPPED_DEVICE_METADATA:native-render-carousel-akano-recipe-candidates.mjs",
+      "sampleId": "N45",
+      "carrier": "AKANO_PREWRAPPED_DEVICE_METADATA",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "viewOnceMessage": {
+          "message": {
+            "messageContextInfo": {
+              "deviceListMetadata": {},
+              "deviceListMetadataVersion": 2
+            },
+            "interactiveMessage": {
+              "body": {
+                "text": "N45 · Carrossel da receita Akano. PRIMEIRO NO iOS: confira os dois cartões, azul e laranja, e toque Escolher cartão 1. Ainda não selecione no Web."
+              },
+              "footer": {
+                "text": "Native · ensaio autorizado"
+              },
+              "carouselMessage": {
+                "cards": [
+                  {
+                    "header": {
+                      "title": "Cartão 1",
+                      "imageMessage": {
+                        "url": "https://example.invalid/fixtures/card-1.enc",
+                        "mimetype": "image/jpeg",
+                        "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                        "fileLength": 1,
+                        "height": 512,
+                        "width": 512,
+                        "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                        "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                        "directPath": "/fixtures/card-1.enc"
+                      },
+                      "hasMediaAttachment": true
+                    },
+                    "body": {
+                      "text": "N45 · Cartão 1 · azul"
+                    },
+                    "footer": {
+                      "text": ""
+                    },
+                    "nativeFlowMessage": {
+                      "buttons": [
+                        {
+                          "name": "quick_reply",
+                          "buttonParamsJson": "{\"display_text\":\"Escolher cartão 1\",\"id\":\"sample_N45_1\"}"
+                        }
+                      ],
+                      "messageParamsJson": "{}"
+                    }
+                  },
+                  {
+                    "header": {
+                      "title": "Cartão 2",
+                      "imageMessage": {
+                        "url": "https://example.invalid/fixtures/card-2.enc",
+                        "mimetype": "image/jpeg",
+                        "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                        "fileLength": 1,
+                        "height": 512,
+                        "width": 512,
+                        "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                        "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                        "directPath": "/fixtures/card-2.enc"
+                      },
+                      "hasMediaAttachment": true
+                    },
+                    "body": {
+                      "text": "N45 · Cartão 2 · laranja"
+                    },
+                    "footer": {
+                      "text": ""
+                    },
+                    "nativeFlowMessage": {
+                      "buttons": [
+                        {
+                          "name": "quick_reply",
+                          "buttonParamsJson": "{\"display_text\":\"Escolher cartão 2\",\"id\":\"sample_N45_2\"}"
+                        }
+                      ],
+                      "messageParamsJson": "{}"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "relayNodes": []
+    },
+    {
+      "key": "N46:AKANO_SDK_DIRECT_WITH_PRIVATE_BOT_NODE:native-render-carousel-akano-sdk-candidates.mjs",
+      "sampleId": "N46",
+      "carrier": "AKANO_SDK_DIRECT_WITH_PRIVATE_BOT_NODE",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "interactiveMessage": {
+          "header": {
+            "hasMediaAttachment": false
+          },
+          "body": {
+            "text": "N46 · Carrossel da receita direta do SDK Akano. PRIMEIRO NO iOS: confira os dois cartões, azul e laranja, e toque Escolher cartão 1. Ainda não selecione no Web."
+          },
+          "carouselMessage": {
+            "cards": [
+              {
+                "header": {
+                  "title": "Cartão 1",
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-1.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-1.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N46 · Cartão 1 · azul"
+                },
+                "footer": {
+                  "text": ""
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 1\",\"id\":\"sample_N46_1\"}"
+                    }
+                  ],
+                  "messageParamsJson": "{}"
+                }
+              },
+              {
+                "header": {
+                  "title": "Cartão 2",
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-2.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-2.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N46 · Cartão 2 · laranja"
+                },
+                "footer": {
+                  "text": ""
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 2\",\"id\":\"sample_N46_2\"}"
+                    }
+                  ],
+                  "messageParamsJson": "{}"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "bot",
+          "attrs": {
+            "biz_bot": "1"
+          }
+        }
+      ]
+    },
+    {
+      "key": "N35:VIEW_ONCE_V2:native-render-carousel-based-recipe-candidates.mjs",
+      "sampleId": "N35",
+      "carrier": "VIEW_ONCE_V2",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "viewOnceMessageV2": {
+          "message": {
+            "interactiveMessage": {
+              "body": {
+                "text": "N35 · Carrossel no carrier V2 da fonte. PRIMEIRO NO iOS: confira os dois cartões, azul e laranja, e toque Escolher cartão 1. Ainda não selecione no outro cliente."
+              },
+              "footer": {
+                "text": "Native · ensaio autorizado"
+              },
+              "carouselMessage": {
+                "cards": [
+                  {
+                    "header": {
+                      "title": "Cartão 1",
+                      "imageMessage": {
+                        "url": "https://example.invalid/fixtures/card-1.enc",
+                        "mimetype": "image/jpeg",
+                        "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                        "fileLength": 1,
+                        "height": 512,
+                        "width": 512,
+                        "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                        "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                        "directPath": "/fixtures/card-1.enc"
+                      },
+                      "hasMediaAttachment": true
+                    },
+                    "body": {
+                      "text": "N35 · Cartão 1 · azul"
+                    },
+                    "footer": {
+                      "text": "Native · ensaio autorizado"
+                    },
+                    "nativeFlowMessage": {
+                      "buttons": [
+                        {
+                          "name": "quick_reply",
+                          "buttonParamsJson": "{\"display_text\":\"Escolher cartão 1\",\"id\":\"sample_N35_1\"}"
+                        }
+                      ],
+                      "messageVersion": 1
+                    }
+                  },
+                  {
+                    "header": {
+                      "title": "Cartão 2",
+                      "imageMessage": {
+                        "url": "https://example.invalid/fixtures/card-2.enc",
+                        "mimetype": "image/jpeg",
+                        "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                        "fileLength": 1,
+                        "height": 512,
+                        "width": 512,
+                        "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                        "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                        "directPath": "/fixtures/card-2.enc"
+                      },
+                      "hasMediaAttachment": true
+                    },
+                    "body": {
+                      "text": "N35 · Cartão 2 · laranja"
+                    },
+                    "footer": {
+                      "text": "Native · ensaio autorizado"
+                    },
+                    "nativeFlowMessage": {
+                      "buttons": [
+                        {
+                          "name": "quick_reply",
+                          "buttonParamsJson": "{\"display_text\":\"Escolher cartão 2\",\"id\":\"sample_N35_2\"}"
+                        }
+                      ],
+                      "messageVersion": 1
+                    }
+                  }
+                ],
+                "messageVersion": 1,
+                "carouselCardType": "HSCROLL_CARDS"
+              }
+            }
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N36:VIEW_ONCE_V2:native-render-carousel-based-recipe-candidates.mjs",
+      "sampleId": "N36",
+      "carrier": "VIEW_ONCE_V2",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "viewOnceMessageV2": {
+          "message": {
+            "interactiveMessage": {
+              "body": {
+                "text": "N36 · Carrossel no carrier V2 da fonte. PRIMEIRO NO Web: confira os dois cartões, azul e laranja, e toque Escolher cartão 2. Ainda não selecione no outro cliente."
+              },
+              "footer": {
+                "text": "Native · ensaio autorizado"
+              },
+              "carouselMessage": {
+                "cards": [
+                  {
+                    "header": {
+                      "title": "Cartão 1",
+                      "imageMessage": {
+                        "url": "https://example.invalid/fixtures/card-1.enc",
+                        "mimetype": "image/jpeg",
+                        "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                        "fileLength": 1,
+                        "height": 512,
+                        "width": 512,
+                        "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                        "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                        "directPath": "/fixtures/card-1.enc"
+                      },
+                      "hasMediaAttachment": true
+                    },
+                    "body": {
+                      "text": "N36 · Cartão 1 · azul"
+                    },
+                    "footer": {
+                      "text": "Native · ensaio autorizado"
+                    },
+                    "nativeFlowMessage": {
+                      "buttons": [
+                        {
+                          "name": "quick_reply",
+                          "buttonParamsJson": "{\"display_text\":\"Escolher cartão 1\",\"id\":\"sample_N36_1\"}"
+                        }
+                      ],
+                      "messageVersion": 1
+                    }
+                  },
+                  {
+                    "header": {
+                      "title": "Cartão 2",
+                      "imageMessage": {
+                        "url": "https://example.invalid/fixtures/card-2.enc",
+                        "mimetype": "image/jpeg",
+                        "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                        "fileLength": 1,
+                        "height": 512,
+                        "width": 512,
+                        "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                        "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                        "directPath": "/fixtures/card-2.enc"
+                      },
+                      "hasMediaAttachment": true
+                    },
+                    "body": {
+                      "text": "N36 · Cartão 2 · laranja"
+                    },
+                    "footer": {
+                      "text": "Native · ensaio autorizado"
+                    },
+                    "nativeFlowMessage": {
+                      "buttons": [
+                        {
+                          "name": "quick_reply",
+                          "buttonParamsJson": "{\"display_text\":\"Escolher cartão 2\",\"id\":\"sample_N36_2\"}"
+                        }
+                      ],
+                      "messageVersion": 1
+                    }
+                  }
+                ],
+                "messageVersion": 1,
+                "carouselCardType": "HSCROLL_CARDS"
+              }
+            }
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N47:AKANO_SDK_DIRECT_WITHOUT_BOT_NODE:native-render-carousel-bot-removal-candidates.mjs",
+      "sampleId": "N47",
+      "carrier": "AKANO_SDK_DIRECT_WITHOUT_BOT_NODE",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "interactiveMessage": {
+          "header": {
+            "hasMediaAttachment": false
+          },
+          "body": {
+            "text": "N47 · Carrossel da receita direta do SDK Akano. PRIMEIRO NO iOS: confira os dois cartões, azul e laranja, e toque Escolher cartão 1. Ainda não selecione no Web."
+          },
+          "carouselMessage": {
+            "cards": [
+              {
+                "header": {
+                  "title": "Cartão 1",
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-1.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-1.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N47 · Cartão 1 · azul"
+                },
+                "footer": {
+                  "text": ""
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 1\",\"id\":\"sample_N47_1\"}"
+                    }
+                  ],
+                  "messageParamsJson": "{}"
+                }
+              },
+              {
+                "header": {
+                  "title": "Cartão 2",
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-2.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-2.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N47 · Cartão 2 · laranja"
+                },
+                "footer": {
+                  "text": ""
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 2\",\"id\":\"sample_N47_2\"}"
+                    }
+                  ],
+                  "messageParamsJson": "{}"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N43:DIRECT_CURRENT_BUILDER:native-render-carousel-current-builder-candidates.mjs",
+      "sampleId": "N43",
+      "carrier": "DIRECT_CURRENT_BUILDER",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "interactiveMessage": {
+          "header": {
+            "hasMediaAttachment": false
+          },
+          "body": {
+            "text": "N43 · Carrossel da receita atual, sem versões declaradas. PRIMEIRO NO iOS: confira as duas imagens e toque Escolher cartão 1. Ainda não selecione no Web."
+          },
+          "footer": {
+            "text": ""
+          },
+          "carouselMessage": {
+            "cards": [
+              {
+                "header": {
+                  "title": "Cartão 1",
+                  "subtitle": "",
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-1.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-1.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N43 · Cartão 1 · azul"
+                },
+                "footer": {
+                  "text": ""
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 1\",\"id\":\"sample_N43_1\"}"
+                    }
+                  ],
+                  "messageParamsJson": "{}"
+                }
+              },
+              {
+                "header": {
+                  "title": "Cartão 2",
+                  "subtitle": "",
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-2.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-2.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N43 · Cartão 2 · laranja"
+                },
+                "footer": {
+                  "text": ""
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 2\",\"id\":\"sample_N43_2\"}"
+                    }
+                  ],
+                  "messageParamsJson": "{}"
+                }
+              }
+            ]
+          },
+          "contextInfo": {}
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N44:DIRECT_CURRENT_BUILDER:native-render-carousel-current-builder-candidates.mjs",
+      "sampleId": "N44",
+      "carrier": "DIRECT_CURRENT_BUILDER",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "interactiveMessage": {
+          "header": {
+            "hasMediaAttachment": false
+          },
+          "body": {
+            "text": "N44 · Carrossel da receita atual, sem versões declaradas. PRIMEIRO NO Web: confira as duas imagens e toque Escolher cartão 2. Ainda não selecione no iOS."
+          },
+          "footer": {
+            "text": ""
+          },
+          "carouselMessage": {
+            "cards": [
+              {
+                "header": {
+                  "title": "Cartão 1",
+                  "subtitle": "",
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-1.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-1.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N44 · Cartão 1 · azul"
+                },
+                "footer": {
+                  "text": ""
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 1\",\"id\":\"sample_N44_1\"}"
+                    }
+                  ],
+                  "messageParamsJson": "{}"
+                }
+              },
+              {
+                "header": {
+                  "title": "Cartão 2",
+                  "subtitle": "",
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-2.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-2.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N44 · Cartão 2 · laranja"
+                },
+                "footer": {
+                  "text": ""
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 2\",\"id\":\"sample_N44_2\"}"
+                    }
+                  ],
+                  "messageParamsJson": "{}"
+                }
+              }
+            ]
+          },
+          "contextInfo": {}
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N49:DIRECT_DECLARED_LAYOUT_FLOW_UNDECLARED:native-render-carousel-declared-layout-candidates.mjs",
+      "sampleId": "N49",
+      "carrier": "DIRECT_DECLARED_LAYOUT_FLOW_UNDECLARED",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "interactiveMessage": {
+          "header": {
+            "hasMediaAttachment": false
+          },
+          "body": {
+            "text": "N49 · PRIMEIRO NO iOS: confira se os cartões azul e laranja deslizam lateralmente como carrossel e toque Escolher cartão 1. Ainda não selecione no Web."
+          },
+          "carouselMessage": {
+            "cards": [
+              {
+                "header": {
+                  "title": "Cartão 1",
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-1.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-1.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N49 · Cartão 1 · azul"
+                },
+                "footer": {
+                  "text": ""
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 1\",\"id\":\"sample_N49_1\"}"
+                    }
+                  ],
+                  "messageParamsJson": "{}"
+                }
+              },
+              {
+                "header": {
+                  "title": "Cartão 2",
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-2.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-2.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N49 · Cartão 2 · laranja"
+                },
+                "footer": {
+                  "text": ""
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 2\",\"id\":\"sample_N49_2\"}"
+                    }
+                  ],
+                  "messageParamsJson": "{}"
+                }
+              }
+            ],
+            "messageVersion": 1,
+            "carouselCardType": "HSCROLL_CARDS"
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N50:DIRECT_DECLARED_LAYOUT_FLOW_VERSION_1:native-render-carousel-declared-layout-candidates.mjs",
+      "sampleId": "N50",
+      "carrier": "DIRECT_DECLARED_LAYOUT_FLOW_VERSION_1",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "interactiveMessage": {
+          "header": {
+            "hasMediaAttachment": false
+          },
+          "body": {
+            "text": "N50 · PRIMEIRO NO iOS: confira se os cartões azul e laranja deslizam lateralmente como carrossel e toque Escolher cartão 1. Ainda não selecione no Web."
+          },
+          "carouselMessage": {
+            "cards": [
+              {
+                "header": {
+                  "title": "Cartão 1",
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-1.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-1.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N50 · Cartão 1 · azul"
+                },
+                "footer": {
+                  "text": ""
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 1\",\"id\":\"sample_N50_1\"}"
+                    }
+                  ],
+                  "messageParamsJson": "{}",
+                  "messageVersion": 1
+                }
+              },
+              {
+                "header": {
+                  "title": "Cartão 2",
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-2.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-2.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N50 · Cartão 2 · laranja"
+                },
+                "footer": {
+                  "text": ""
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 2\",\"id\":\"sample_N50_2\"}"
+                    }
+                  ],
+                  "messageParamsJson": "{}",
+                  "messageVersion": 1
+                }
+              }
+            ],
+            "messageVersion": 1,
+            "carouselCardType": "HSCROLL_CARDS"
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N41:VIEW_ONCE_WITH_NESTED_METADATA:native-render-carousel-engagement-candidates.mjs",
+      "sampleId": "N41",
+      "carrier": "VIEW_ONCE_WITH_NESTED_METADATA",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "viewOnceMessage": {
+          "message": {
+            "messageContextInfo": {
+              "deviceListMetadata": {},
+              "deviceListMetadataVersion": 2,
+              "messageSecret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+            },
+            "interactiveMessage": {
+              "header": {
+                "title": "",
+                "hasMediaAttachment": false
+              },
+              "body": {
+                "text": "N41 · Carrossel com envelope de engajamento da fonte. PRIMEIRO NO iOS: confira os dois cartões, azul e laranja, e toque Escolher cartão 1. Ainda não selecione no outro cliente."
+              },
+              "footer": {
+                "text": "Native · ensaio autorizado"
+              },
+              "carouselMessage": {
+                "cards": [
+                  {
+                    "header": {
+                      "title": "Cartão 1",
+                      "imageMessage": {
+                        "url": "https://example.invalid/fixtures/card-1.enc",
+                        "mimetype": "image/jpeg",
+                        "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                        "fileLength": 1,
+                        "height": 512,
+                        "width": 512,
+                        "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                        "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                        "directPath": "/fixtures/card-1.enc"
+                      },
+                      "hasMediaAttachment": true
+                    },
+                    "body": {
+                      "text": "N41 · Cartão 1 · azul"
+                    },
+                    "footer": {
+                      "text": "Native · ensaio autorizado"
+                    },
+                    "nativeFlowMessage": {
+                      "buttons": [
+                        {
+                          "name": "quick_reply",
+                          "buttonParamsJson": "{\"display_text\":\"Escolher cartão 1\",\"id\":\"sample_N41_1\"}"
+                        }
+                      ],
+                      "messageVersion": 1
+                    }
+                  },
+                  {
+                    "header": {
+                      "title": "Cartão 2",
+                      "imageMessage": {
+                        "url": "https://example.invalid/fixtures/card-2.enc",
+                        "mimetype": "image/jpeg",
+                        "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                        "fileLength": 1,
+                        "height": 512,
+                        "width": 512,
+                        "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                        "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                        "directPath": "/fixtures/card-2.enc"
+                      },
+                      "hasMediaAttachment": true
+                    },
+                    "body": {
+                      "text": "N41 · Cartão 2 · laranja"
+                    },
+                    "footer": {
+                      "text": "Native · ensaio autorizado"
+                    },
+                    "nativeFlowMessage": {
+                      "buttons": [
+                        {
+                          "name": "quick_reply",
+                          "buttonParamsJson": "{\"display_text\":\"Escolher cartão 2\",\"id\":\"sample_N41_2\"}"
+                        }
+                      ],
+                      "messageVersion": 1
+                    }
+                  }
+                ],
+                "messageVersion": 1,
+                "carouselCardType": "HSCROLL_CARDS"
+              }
+            }
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {
+            "actual_actors": "2",
+            "host_storage": "2",
+            "privacy_mode_ts": "1713365869"
+          },
+          "content": [
+            {
+              "tag": "engagement",
+              "attrs": {
+                "customer_service_state": "open",
+                "conversation_state": "open"
+              }
+            },
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  },
+                  "content": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N42:VIEW_ONCE_WITH_NESTED_METADATA:native-render-carousel-engagement-candidates.mjs",
+      "sampleId": "N42",
+      "carrier": "VIEW_ONCE_WITH_NESTED_METADATA",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "viewOnceMessage": {
+          "message": {
+            "messageContextInfo": {
+              "deviceListMetadata": {},
+              "deviceListMetadataVersion": 2,
+              "messageSecret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+            },
+            "interactiveMessage": {
+              "header": {
+                "title": "",
+                "hasMediaAttachment": false
+              },
+              "body": {
+                "text": "N42 · Carrossel com envelope de engajamento da fonte. PRIMEIRO NO Web: confira os dois cartões, azul e laranja, e toque Escolher cartão 2. Ainda não selecione no outro cliente."
+              },
+              "footer": {
+                "text": "Native · ensaio autorizado"
+              },
+              "carouselMessage": {
+                "cards": [
+                  {
+                    "header": {
+                      "title": "Cartão 1",
+                      "imageMessage": {
+                        "url": "https://example.invalid/fixtures/card-1.enc",
+                        "mimetype": "image/jpeg",
+                        "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                        "fileLength": 1,
+                        "height": 512,
+                        "width": 512,
+                        "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                        "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                        "directPath": "/fixtures/card-1.enc"
+                      },
+                      "hasMediaAttachment": true
+                    },
+                    "body": {
+                      "text": "N42 · Cartão 1 · azul"
+                    },
+                    "footer": {
+                      "text": "Native · ensaio autorizado"
+                    },
+                    "nativeFlowMessage": {
+                      "buttons": [
+                        {
+                          "name": "quick_reply",
+                          "buttonParamsJson": "{\"display_text\":\"Escolher cartão 1\",\"id\":\"sample_N42_1\"}"
+                        }
+                      ],
+                      "messageVersion": 1
+                    }
+                  },
+                  {
+                    "header": {
+                      "title": "Cartão 2",
+                      "imageMessage": {
+                        "url": "https://example.invalid/fixtures/card-2.enc",
+                        "mimetype": "image/jpeg",
+                        "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                        "fileLength": 1,
+                        "height": 512,
+                        "width": 512,
+                        "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                        "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                        "directPath": "/fixtures/card-2.enc"
+                      },
+                      "hasMediaAttachment": true
+                    },
+                    "body": {
+                      "text": "N42 · Cartão 2 · laranja"
+                    },
+                    "footer": {
+                      "text": "Native · ensaio autorizado"
+                    },
+                    "nativeFlowMessage": {
+                      "buttons": [
+                        {
+                          "name": "quick_reply",
+                          "buttonParamsJson": "{\"display_text\":\"Escolher cartão 2\",\"id\":\"sample_N42_2\"}"
+                        }
+                      ],
+                      "messageVersion": 1
+                    }
+                  }
+                ],
+                "messageVersion": 1,
+                "carouselCardType": "HSCROLL_CARDS"
+              }
+            }
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {
+            "actual_actors": "2",
+            "host_storage": "2",
+            "privacy_mode_ts": "1713365869"
+          },
+          "content": [
+            {
+              "tag": "engagement",
+              "attrs": {
+                "customer_service_state": "open",
+                "conversation_state": "open"
+              }
+            },
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  },
+                  "content": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N29:DIRECT:native-render-carousel-envelope-candidates.mjs",
+      "sampleId": "N29",
+      "carrier": "DIRECT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "messageContextInfo": {
+          "deviceListMetadata": {
+            "recipientKeyHash": "AAAAAAAAAAAAAA==",
+            "recipientTimestamp": 1791244800
+          },
+          "deviceListMetadataVersion": 2,
+          "messageSecret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        },
+        "interactiveMessage": {
+          "body": {
+            "text": "N29 · Carrossel com envelope de interação. PRIMEIRO NO iOS: confira os dois cartões, azul e laranja, e toque Escolher cartão 1. Ainda não selecione no outro cliente."
+          },
+          "footer": {
+            "text": "Native · ensaio autorizado"
+          },
+          "carouselMessage": {
+            "cards": [
+              {
+                "header": {
+                  "title": "",
+                  "subtitle": "",
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-1.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-1.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N29 · Cartão 1 · azul"
+                },
+                "footer": {
+                  "text": "Native · ensaio autorizado"
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 1\",\"id\":\"sample_N29_1\"}"
+                    }
+                  ],
+                  "messageParamsJson": "{}"
+                }
+              },
+              {
+                "header": {
+                  "title": "",
+                  "subtitle": "",
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-2.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-2.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N29 · Cartão 2 · laranja"
+                },
+                "footer": {
+                  "text": "Native · ensaio autorizado"
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 2\",\"id\":\"sample_N29_2\"}"
+                    }
+                  ],
+                  "messageParamsJson": "{}"
+                }
+              }
+            ],
+            "messageVersion": 1,
+            "carouselCardType": "UNKNOWN"
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {
+            "actual_actors": "2",
+            "host_storage": "2",
+            "privacy_mode_ts": "1791346326"
+          },
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "quality_control",
+              "attrs": {
+                "decision_id": "0000000000000000000000000000000000000000",
+                "source_type": "third_party"
+              },
+              "content": [
+                {
+                  "tag": "decision_source",
+                  "attrs": {
+                    "value": "df"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N30:DIRECT:native-render-carousel-envelope-candidates.mjs",
+      "sampleId": "N30",
+      "carrier": "DIRECT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "messageContextInfo": {
+          "deviceListMetadata": {
+            "recipientKeyHash": "AAAAAAAAAAAAAA==",
+            "recipientTimestamp": 1791244800
+          },
+          "deviceListMetadataVersion": 2,
+          "messageSecret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        },
+        "interactiveMessage": {
+          "body": {
+            "text": "N30 · Carrossel com envelope de interação. PRIMEIRO NO Web: confira os dois cartões, azul e laranja, e toque Escolher cartão 2. Ainda não selecione no outro cliente."
+          },
+          "footer": {
+            "text": "Native · ensaio autorizado"
+          },
+          "carouselMessage": {
+            "cards": [
+              {
+                "header": {
+                  "title": "",
+                  "subtitle": "",
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-1.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-1.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N30 · Cartão 1 · azul"
+                },
+                "footer": {
+                  "text": "Native · ensaio autorizado"
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 1\",\"id\":\"sample_N30_1\"}"
+                    }
+                  ],
+                  "messageParamsJson": "{}"
+                }
+              },
+              {
+                "header": {
+                  "title": "",
+                  "subtitle": "",
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-2.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-2.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N30 · Cartão 2 · laranja"
+                },
+                "footer": {
+                  "text": "Native · ensaio autorizado"
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 2\",\"id\":\"sample_N30_2\"}"
+                    }
+                  ],
+                  "messageParamsJson": "{}"
+                }
+              }
+            ],
+            "messageVersion": 1,
+            "carouselCardType": "UNKNOWN"
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {
+            "actual_actors": "2",
+            "host_storage": "2",
+            "privacy_mode_ts": "1791346326"
+          },
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "quality_control",
+              "attrs": {
+                "decision_id": "0000000000000000000000000000000000000000",
+                "source_type": "third_party"
+              },
+              "content": [
+                {
+                  "tag": "decision_source",
+                  "attrs": {
+                    "value": "df"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N48:DIRECT_CAROUSEL_WITH_CARD_FLOW_VERSION_3:native-render-carousel-flow-v3-candidates.mjs",
+      "sampleId": "N48",
+      "carrier": "DIRECT_CAROUSEL_WITH_CARD_FLOW_VERSION_3",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "interactiveMessage": {
+          "header": {
+            "hasMediaAttachment": false
+          },
+          "body": {
+            "text": "N48 · Carrossel da receita direta do SDK Akano. PRIMEIRO NO iOS: confira os dois cartões, azul e laranja, e toque Escolher cartão 1. Ainda não selecione no Web."
+          },
+          "carouselMessage": {
+            "cards": [
+              {
+                "header": {
+                  "title": "Cartão 1",
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-1.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-1.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N48 · Cartão 1 · azul"
+                },
+                "footer": {
+                  "text": ""
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 1\",\"id\":\"sample_N48_1\"}"
+                    }
+                  ],
+                  "messageParamsJson": "{}",
+                  "messageVersion": 3
+                }
+              },
+              {
+                "header": {
+                  "title": "Cartão 2",
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-2.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-2.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N48 · Cartão 2 · laranja"
+                },
+                "footer": {
+                  "text": ""
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 2\",\"id\":\"sample_N48_2\"}"
+                    }
+                  ],
+                  "messageParamsJson": "{}",
+                  "messageVersion": 3
+                }
+              }
+            ]
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N39:VIEW_ONCE_WITH_NESTED_METADATA:native-render-carousel-nested-recipe-candidates.mjs",
+      "sampleId": "N39",
+      "carrier": "VIEW_ONCE_WITH_NESTED_METADATA",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "viewOnceMessage": {
+          "message": {
+            "messageContextInfo": {
+              "deviceListMetadata": {},
+              "deviceListMetadataVersion": 2,
+              "messageSecret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+            },
+            "interactiveMessage": {
+              "header": {
+                "title": "",
+                "hasMediaAttachment": false
+              },
+              "body": {
+                "text": "N39 · Carrossel com metadados dentro do carrier da fonte. PRIMEIRO NO iOS: confira os dois cartões, azul e laranja, e toque Escolher cartão 1. Ainda não selecione no outro cliente."
+              },
+              "footer": {
+                "text": "Native · ensaio autorizado"
+              },
+              "carouselMessage": {
+                "cards": [
+                  {
+                    "header": {
+                      "title": "Cartão 1",
+                      "imageMessage": {
+                        "url": "https://example.invalid/fixtures/card-1.enc",
+                        "mimetype": "image/jpeg",
+                        "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                        "fileLength": 1,
+                        "height": 512,
+                        "width": 512,
+                        "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                        "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                        "directPath": "/fixtures/card-1.enc"
+                      },
+                      "hasMediaAttachment": true
+                    },
+                    "body": {
+                      "text": "N39 · Cartão 1 · azul"
+                    },
+                    "footer": {
+                      "text": "Native · ensaio autorizado"
+                    },
+                    "nativeFlowMessage": {
+                      "buttons": [
+                        {
+                          "name": "quick_reply",
+                          "buttonParamsJson": "{\"display_text\":\"Escolher cartão 1\",\"id\":\"sample_N39_1\"}"
+                        }
+                      ],
+                      "messageVersion": 1
+                    }
+                  },
+                  {
+                    "header": {
+                      "title": "Cartão 2",
+                      "imageMessage": {
+                        "url": "https://example.invalid/fixtures/card-2.enc",
+                        "mimetype": "image/jpeg",
+                        "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                        "fileLength": 1,
+                        "height": 512,
+                        "width": 512,
+                        "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                        "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                        "directPath": "/fixtures/card-2.enc"
+                      },
+                      "hasMediaAttachment": true
+                    },
+                    "body": {
+                      "text": "N39 · Cartão 2 · laranja"
+                    },
+                    "footer": {
+                      "text": "Native · ensaio autorizado"
+                    },
+                    "nativeFlowMessage": {
+                      "buttons": [
+                        {
+                          "name": "quick_reply",
+                          "buttonParamsJson": "{\"display_text\":\"Escolher cartão 2\",\"id\":\"sample_N39_2\"}"
+                        }
+                      ],
+                      "messageVersion": 1
+                    }
+                  }
+                ],
+                "messageVersion": 1,
+                "carouselCardType": "HSCROLL_CARDS"
+              }
+            }
+          }
+        }
+      },
+      "relayNodes": []
+    },
+    {
+      "key": "N40:VIEW_ONCE_WITH_NESTED_METADATA:native-render-carousel-nested-recipe-candidates.mjs",
+      "sampleId": "N40",
+      "carrier": "VIEW_ONCE_WITH_NESTED_METADATA",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "viewOnceMessage": {
+          "message": {
+            "messageContextInfo": {
+              "deviceListMetadata": {},
+              "deviceListMetadataVersion": 2,
+              "messageSecret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+            },
+            "interactiveMessage": {
+              "header": {
+                "title": "",
+                "hasMediaAttachment": false
+              },
+              "body": {
+                "text": "N40 · Carrossel com metadados dentro do carrier da fonte. PRIMEIRO NO Web: confira os dois cartões, azul e laranja, e toque Escolher cartão 2. Ainda não selecione no outro cliente."
+              },
+              "footer": {
+                "text": "Native · ensaio autorizado"
+              },
+              "carouselMessage": {
+                "cards": [
+                  {
+                    "header": {
+                      "title": "Cartão 1",
+                      "imageMessage": {
+                        "url": "https://example.invalid/fixtures/card-1.enc",
+                        "mimetype": "image/jpeg",
+                        "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                        "fileLength": 1,
+                        "height": 512,
+                        "width": 512,
+                        "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                        "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                        "directPath": "/fixtures/card-1.enc"
+                      },
+                      "hasMediaAttachment": true
+                    },
+                    "body": {
+                      "text": "N40 · Cartão 1 · azul"
+                    },
+                    "footer": {
+                      "text": "Native · ensaio autorizado"
+                    },
+                    "nativeFlowMessage": {
+                      "buttons": [
+                        {
+                          "name": "quick_reply",
+                          "buttonParamsJson": "{\"display_text\":\"Escolher cartão 1\",\"id\":\"sample_N40_1\"}"
+                        }
+                      ],
+                      "messageVersion": 1
+                    }
+                  },
+                  {
+                    "header": {
+                      "title": "Cartão 2",
+                      "imageMessage": {
+                        "url": "https://example.invalid/fixtures/card-2.enc",
+                        "mimetype": "image/jpeg",
+                        "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                        "fileLength": 1,
+                        "height": 512,
+                        "width": 512,
+                        "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                        "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                        "directPath": "/fixtures/card-2.enc"
+                      },
+                      "hasMediaAttachment": true
+                    },
+                    "body": {
+                      "text": "N40 · Cartão 2 · laranja"
+                    },
+                    "footer": {
+                      "text": "Native · ensaio autorizado"
+                    },
+                    "nativeFlowMessage": {
+                      "buttons": [
+                        {
+                          "name": "quick_reply",
+                          "buttonParamsJson": "{\"display_text\":\"Escolher cartão 2\",\"id\":\"sample_N40_2\"}"
+                        }
+                      ],
+                      "messageVersion": 1
+                    }
+                  }
+                ],
+                "messageVersion": 1,
+                "carouselCardType": "HSCROLL_CARDS"
+              }
+            }
+          }
+        }
+      },
+      "relayNodes": []
+    },
+    {
+      "key": "N37:VIEW_ONCE_V2:native-render-carousel-node-candidates.mjs",
+      "sampleId": "N37",
+      "carrier": "VIEW_ONCE_V2",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "viewOnceMessageV2": {
+          "message": {
+            "interactiveMessage": {
+              "body": {
+                "text": "N37 · Carrossel V2 com nó específico de carrossel. PRIMEIRO NO iOS: confira os dois cartões, azul e laranja, e toque Escolher cartão 1. Ainda não selecione no outro cliente."
+              },
+              "footer": {
+                "text": "Native · ensaio autorizado"
+              },
+              "carouselMessage": {
+                "cards": [
+                  {
+                    "header": {
+                      "title": "Cartão 1",
+                      "imageMessage": {
+                        "url": "https://example.invalid/fixtures/card-1.enc",
+                        "mimetype": "image/jpeg",
+                        "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                        "fileLength": 1,
+                        "height": 512,
+                        "width": 512,
+                        "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                        "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                        "directPath": "/fixtures/card-1.enc"
+                      },
+                      "hasMediaAttachment": true
+                    },
+                    "body": {
+                      "text": "N37 · Cartão 1 · azul"
+                    },
+                    "footer": {
+                      "text": "Native · ensaio autorizado"
+                    },
+                    "nativeFlowMessage": {
+                      "buttons": [
+                        {
+                          "name": "quick_reply",
+                          "buttonParamsJson": "{\"display_text\":\"Escolher cartão 1\",\"id\":\"sample_N37_1\"}"
+                        }
+                      ],
+                      "messageVersion": 1
+                    }
+                  },
+                  {
+                    "header": {
+                      "title": "Cartão 2",
+                      "imageMessage": {
+                        "url": "https://example.invalid/fixtures/card-2.enc",
+                        "mimetype": "image/jpeg",
+                        "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                        "fileLength": 1,
+                        "height": 512,
+                        "width": 512,
+                        "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                        "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                        "directPath": "/fixtures/card-2.enc"
+                      },
+                      "hasMediaAttachment": true
+                    },
+                    "body": {
+                      "text": "N37 · Cartão 2 · laranja"
+                    },
+                    "footer": {
+                      "text": "Native · ensaio autorizado"
+                    },
+                    "nativeFlowMessage": {
+                      "buttons": [
+                        {
+                          "name": "quick_reply",
+                          "buttonParamsJson": "{\"display_text\":\"Escolher cartão 2\",\"id\":\"sample_N37_2\"}"
+                        }
+                      ],
+                      "messageVersion": 1
+                    }
+                  }
+                ],
+                "messageVersion": 1,
+                "carouselCardType": "HSCROLL_CARDS"
+              }
+            }
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "carousel",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "carousel",
+                  "attrs": {
+                    "v": "1"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N38:VIEW_ONCE_V2:native-render-carousel-node-candidates.mjs",
+      "sampleId": "N38",
+      "carrier": "VIEW_ONCE_V2",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "viewOnceMessageV2": {
+          "message": {
+            "interactiveMessage": {
+              "body": {
+                "text": "N38 · Carrossel V2 com nó específico de carrossel. PRIMEIRO NO Web: confira os dois cartões, azul e laranja, e toque Escolher cartão 2. Ainda não selecione no outro cliente."
+              },
+              "footer": {
+                "text": "Native · ensaio autorizado"
+              },
+              "carouselMessage": {
+                "cards": [
+                  {
+                    "header": {
+                      "title": "Cartão 1",
+                      "imageMessage": {
+                        "url": "https://example.invalid/fixtures/card-1.enc",
+                        "mimetype": "image/jpeg",
+                        "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                        "fileLength": 1,
+                        "height": 512,
+                        "width": 512,
+                        "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                        "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                        "directPath": "/fixtures/card-1.enc"
+                      },
+                      "hasMediaAttachment": true
+                    },
+                    "body": {
+                      "text": "N38 · Cartão 1 · azul"
+                    },
+                    "footer": {
+                      "text": "Native · ensaio autorizado"
+                    },
+                    "nativeFlowMessage": {
+                      "buttons": [
+                        {
+                          "name": "quick_reply",
+                          "buttonParamsJson": "{\"display_text\":\"Escolher cartão 1\",\"id\":\"sample_N38_1\"}"
+                        }
+                      ],
+                      "messageVersion": 1
+                    }
+                  },
+                  {
+                    "header": {
+                      "title": "Cartão 2",
+                      "imageMessage": {
+                        "url": "https://example.invalid/fixtures/card-2.enc",
+                        "mimetype": "image/jpeg",
+                        "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                        "fileLength": 1,
+                        "height": 512,
+                        "width": 512,
+                        "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                        "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                        "directPath": "/fixtures/card-2.enc"
+                      },
+                      "hasMediaAttachment": true
+                    },
+                    "body": {
+                      "text": "N38 · Cartão 2 · laranja"
+                    },
+                    "footer": {
+                      "text": "Native · ensaio autorizado"
+                    },
+                    "nativeFlowMessage": {
+                      "buttons": [
+                        {
+                          "name": "quick_reply",
+                          "buttonParamsJson": "{\"display_text\":\"Escolher cartão 2\",\"id\":\"sample_N38_2\"}"
+                        }
+                      ],
+                      "messageVersion": 1
+                    }
+                  }
+                ],
+                "messageVersion": 1,
+                "carouselCardType": "HSCROLL_CARDS"
+              }
+            }
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "carousel",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "carousel",
+                  "attrs": {
+                    "v": "1"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N31:TEMPLATE:native-render-carousel-template-candidates.mjs",
+      "sampleId": "N31",
+      "carrier": "TEMPLATE",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "templateMessage",
+      "message": {
+        "templateMessage": {
+          "interactiveMessageTemplate": {
+            "body": {
+              "text": "N31 · Carrossel no carrier de template. PRIMEIRO NO iOS: confira os dois cartões, azul e laranja, e toque Escolher cartão 1. Ainda não selecione no outro cliente."
+            },
+            "footer": {
+              "text": "Native · ensaio autorizado"
+            },
+            "carouselMessage": {
+              "cards": [
+                {
+                  "header": {
+                    "title": "",
+                    "subtitle": "",
+                    "imageMessage": {
+                      "url": "https://example.invalid/fixtures/card-1.enc",
+                      "mimetype": "image/jpeg",
+                      "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                      "fileLength": 1,
+                      "height": 512,
+                      "width": 512,
+                      "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                      "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                      "directPath": "/fixtures/card-1.enc"
+                    },
+                    "hasMediaAttachment": true
+                  },
+                  "body": {
+                    "text": "N31 · Cartão 1 · azul"
+                  },
+                  "footer": {
+                    "text": "Native · ensaio autorizado"
+                  },
+                  "nativeFlowMessage": {
+                    "buttons": [
+                      {
+                        "name": "quick_reply",
+                        "buttonParamsJson": "{\"display_text\":\"Escolher cartão 1\",\"id\":\"sample_N31_1\"}"
+                      }
+                    ],
+                    "messageParamsJson": "{}"
+                  }
+                },
+                {
+                  "header": {
+                    "title": "",
+                    "subtitle": "",
+                    "imageMessage": {
+                      "url": "https://example.invalid/fixtures/card-2.enc",
+                      "mimetype": "image/jpeg",
+                      "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                      "fileLength": 1,
+                      "height": 512,
+                      "width": 512,
+                      "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                      "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                      "directPath": "/fixtures/card-2.enc"
+                    },
+                    "hasMediaAttachment": true
+                  },
+                  "body": {
+                    "text": "N31 · Cartão 2 · laranja"
+                  },
+                  "footer": {
+                    "text": "Native · ensaio autorizado"
+                  },
+                  "nativeFlowMessage": {
+                    "buttons": [
+                      {
+                        "name": "quick_reply",
+                        "buttonParamsJson": "{\"display_text\":\"Escolher cartão 2\",\"id\":\"sample_N31_2\"}"
+                      }
+                    ],
+                    "messageParamsJson": "{}"
+                  }
+                }
+              ],
+              "messageVersion": 1,
+              "carouselCardType": "UNKNOWN"
+            }
+          },
+          "templateId": "Native-N31"
+        },
+        "messageContextInfo": {
+          "deviceListMetadata": {
+            "recipientKeyHash": "AAAAAAAAAAAAAA==",
+            "recipientTimestamp": 1791244800
+          },
+          "deviceListMetadataVersion": 2,
+          "messageSecret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {
+            "actual_actors": "2",
+            "host_storage": "2",
+            "privacy_mode_ts": "1791346326"
+          },
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "quality_control",
+              "attrs": {
+                "decision_id": "0000000000000000000000000000000000000000",
+                "source_type": "third_party"
+              },
+              "content": [
+                {
+                  "tag": "decision_source",
+                  "attrs": {
+                    "value": "df"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N32:TEMPLATE:native-render-carousel-template-candidates.mjs",
+      "sampleId": "N32",
+      "carrier": "TEMPLATE",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "templateMessage",
+      "message": {
+        "templateMessage": {
+          "interactiveMessageTemplate": {
+            "body": {
+              "text": "N32 · Carrossel no carrier de template. PRIMEIRO NO Web: confira os dois cartões, azul e laranja, e toque Escolher cartão 2. Ainda não selecione no outro cliente."
+            },
+            "footer": {
+              "text": "Native · ensaio autorizado"
+            },
+            "carouselMessage": {
+              "cards": [
+                {
+                  "header": {
+                    "title": "",
+                    "subtitle": "",
+                    "imageMessage": {
+                      "url": "https://example.invalid/fixtures/card-1.enc",
+                      "mimetype": "image/jpeg",
+                      "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                      "fileLength": 1,
+                      "height": 512,
+                      "width": 512,
+                      "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                      "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                      "directPath": "/fixtures/card-1.enc"
+                    },
+                    "hasMediaAttachment": true
+                  },
+                  "body": {
+                    "text": "N32 · Cartão 1 · azul"
+                  },
+                  "footer": {
+                    "text": "Native · ensaio autorizado"
+                  },
+                  "nativeFlowMessage": {
+                    "buttons": [
+                      {
+                        "name": "quick_reply",
+                        "buttonParamsJson": "{\"display_text\":\"Escolher cartão 1\",\"id\":\"sample_N32_1\"}"
+                      }
+                    ],
+                    "messageParamsJson": "{}"
+                  }
+                },
+                {
+                  "header": {
+                    "title": "",
+                    "subtitle": "",
+                    "imageMessage": {
+                      "url": "https://example.invalid/fixtures/card-2.enc",
+                      "mimetype": "image/jpeg",
+                      "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                      "fileLength": 1,
+                      "height": 512,
+                      "width": 512,
+                      "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                      "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                      "directPath": "/fixtures/card-2.enc"
+                    },
+                    "hasMediaAttachment": true
+                  },
+                  "body": {
+                    "text": "N32 · Cartão 2 · laranja"
+                  },
+                  "footer": {
+                    "text": "Native · ensaio autorizado"
+                  },
+                  "nativeFlowMessage": {
+                    "buttons": [
+                      {
+                        "name": "quick_reply",
+                        "buttonParamsJson": "{\"display_text\":\"Escolher cartão 2\",\"id\":\"sample_N32_2\"}"
+                      }
+                    ],
+                    "messageParamsJson": "{}"
+                  }
+                }
+              ],
+              "messageVersion": 1,
+              "carouselCardType": "UNKNOWN"
+            }
+          },
+          "templateId": "Native-N32"
+        },
+        "messageContextInfo": {
+          "deviceListMetadata": {
+            "recipientKeyHash": "AAAAAAAAAAAAAA==",
+            "recipientTimestamp": 1791244800
+          },
+          "deviceListMetadataVersion": 2,
+          "messageSecret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {
+            "actual_actors": "2",
+            "host_storage": "2",
+            "privacy_mode_ts": "1791346326"
+          },
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "quality_control",
+              "attrs": {
+                "decision_id": "0000000000000000000000000000000000000000",
+                "source_type": "third_party"
+              },
+              "content": [
+                {
+                  "tag": "decision_source",
+                  "attrs": {
+                    "value": "df"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N33:DIRECT:native-render-carousel-type-candidates.mjs",
+      "sampleId": "N33",
+      "carrier": "DIRECT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "messageContextInfo": {
+          "deviceListMetadata": {
+            "recipientKeyHash": "AAAAAAAAAAAAAA==",
+            "recipientTimestamp": 1791244800
+          },
+          "deviceListMetadataVersion": 2,
+          "messageSecret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        },
+        "interactiveMessage": {
+          "body": {
+            "text": "N33 · Carrossel com tipo horizontal explícito. PRIMEIRO NO iOS: confira os dois cartões, azul e laranja, e toque Escolher cartão 1. Ainda não selecione no outro cliente."
+          },
+          "footer": {
+            "text": "Native · ensaio autorizado"
+          },
+          "carouselMessage": {
+            "cards": [
+              {
+                "header": {
+                  "title": "",
+                  "subtitle": "",
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-1.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-1.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N33 · Cartão 1 · azul"
+                },
+                "footer": {
+                  "text": "Native · ensaio autorizado"
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 1\",\"id\":\"sample_N33_1\"}"
+                    }
+                  ],
+                  "messageParamsJson": "{}"
+                }
+              },
+              {
+                "header": {
+                  "title": "",
+                  "subtitle": "",
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-2.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-2.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N33 · Cartão 2 · laranja"
+                },
+                "footer": {
+                  "text": "Native · ensaio autorizado"
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 2\",\"id\":\"sample_N33_2\"}"
+                    }
+                  ],
+                  "messageParamsJson": "{}"
+                }
+              }
+            ],
+            "messageVersion": 1,
+            "carouselCardType": "HSCROLL_CARDS"
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {
+            "actual_actors": "2",
+            "host_storage": "2",
+            "privacy_mode_ts": "1791346326"
+          },
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "quality_control",
+              "attrs": {
+                "decision_id": "0000000000000000000000000000000000000000",
+                "source_type": "third_party"
+              },
+              "content": [
+                {
+                  "tag": "decision_source",
+                  "attrs": {
+                    "value": "df"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N34:DIRECT:native-render-carousel-type-candidates.mjs",
+      "sampleId": "N34",
+      "carrier": "DIRECT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "messageContextInfo": {
+          "deviceListMetadata": {
+            "recipientKeyHash": "AAAAAAAAAAAAAA==",
+            "recipientTimestamp": 1791244800
+          },
+          "deviceListMetadataVersion": 2,
+          "messageSecret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        },
+        "interactiveMessage": {
+          "body": {
+            "text": "N34 · Carrossel com tipo horizontal explícito. PRIMEIRO NO Web: confira os dois cartões, azul e laranja, e toque Escolher cartão 2. Ainda não selecione no outro cliente."
+          },
+          "footer": {
+            "text": "Native · ensaio autorizado"
+          },
+          "carouselMessage": {
+            "cards": [
+              {
+                "header": {
+                  "title": "",
+                  "subtitle": "",
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-1.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-1.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N34 · Cartão 1 · azul"
+                },
+                "footer": {
+                  "text": "Native · ensaio autorizado"
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 1\",\"id\":\"sample_N34_1\"}"
+                    }
+                  ],
+                  "messageParamsJson": "{}"
+                }
+              },
+              {
+                "header": {
+                  "title": "",
+                  "subtitle": "",
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-2.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-2.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N34 · Cartão 2 · laranja"
+                },
+                "footer": {
+                  "text": "Native · ensaio autorizado"
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 2\",\"id\":\"sample_N34_2\"}"
+                    }
+                  ],
+                  "messageParamsJson": "{}"
+                }
+              }
+            ],
+            "messageVersion": 1,
+            "carouselCardType": "HSCROLL_CARDS"
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {
+            "actual_actors": "2",
+            "host_storage": "2",
+            "privacy_mode_ts": "1791346326"
+          },
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "quality_control",
+              "attrs": {
+                "decision_id": "0000000000000000000000000000000000000000",
+                "source_type": "third_party"
+              },
+              "content": [
+                {
+                  "tag": "decision_source",
+                  "attrs": {
+                    "value": "df"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N17:DIRECT:native-render-encoding-controls-candidates.mjs",
+      "sampleId": "N17",
+      "carrier": "DIRECT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "messageContextInfo": {
+          "messageSecret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        },
+        "interactiveMessage": {
+          "body": {
+            "text": "N17 · Controle de botões RECEBIDOS. PRIMEIRO NO iOS da conta destinatária: toque Teste iOS e confira se a escolha é enviada. Ainda não selecione no Web."
+          },
+          "footer": {
+            "text": "Native · novo ensaio autorizado"
+          },
+          "nativeFlowMessage": {
+            "buttons": [
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\"Teste iOS\",\"id\":\"sample_N17_ios\"}"
+              },
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\"Teste Web\",\"id\":\"sample_N17_web\"}"
+              }
+            ],
+            "messageVersion": 1
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N18:VIEW_ONCE_CARRIER:native-render-encoding-controls-candidates.mjs",
+      "sampleId": "N18",
+      "carrier": "VIEW_ONCE_CARRIER",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "messageContextInfo": {
+          "messageSecret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        },
+        "viewOnceMessage": {
+          "message": {
+            "interactiveMessage": {
+              "body": {
+                "text": "N18 · Controle de botões RECEBIDOS. PRIMEIRO NO iOS da conta destinatária: toque Teste iOS e confira se a escolha é enviada. Ainda não selecione no Web."
+              },
+              "footer": {
+                "text": "Native · novo ensaio autorizado"
+              },
+              "nativeFlowMessage": {
+                "buttons": [
+                  {
+                    "name": "quick_reply",
+                    "buttonParamsJson": "{\"display_text\":\"Teste iOS\",\"id\":\"sample_N18_ios\"}"
+                  },
+                  {
+                    "name": "quick_reply",
+                    "buttonParamsJson": "{\"display_text\":\"Teste Web\",\"id\":\"sample_N18_web\"}"
+                  }
+                ],
+                "messageVersion": 1
+              }
+            }
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N19:DIRECT:native-render-encoding-controls-candidates.mjs",
+      "sampleId": "N19",
+      "carrier": "DIRECT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "buttonsMessage",
+      "message": {
+        "messageContextInfo": {
+          "messageSecret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        },
+        "buttonsMessage": {
+          "contentText": "N19 · Controle de botões RECEBIDOS. PRIMEIRO NO iOS da conta destinatária: toque Teste iOS e confira se a escolha é enviada. Ainda não selecione no Web.",
+          "footerText": "Native · ensaio autorizado",
+          "buttons": [
+            {
+              "buttonId": "sample_N19_ios",
+              "buttonText": {
+                "displayText": "Teste iOS"
+              },
+              "type": "RESPONSE"
+            },
+            {
+              "buttonId": "sample_N19_web",
+              "buttonText": {
+                "displayText": "Teste Web"
+              },
+              "type": "RESPONSE"
+            }
+          ],
+          "headerType": "EMPTY"
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "buttons",
+              "attrs": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N15:DIRECT:native-render-flow-controls-candidates.mjs",
+      "sampleId": "N15",
+      "carrier": "DIRECT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "messageContextInfo": {
+          "messageSecret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        },
+        "interactiveMessage": {
+          "body": {
+            "text": "N15 · Controle de botões. PRIMEIRO NO iOS: toque Teste iOS e confira se a escolha é enviada. Ainda não selecione no Web."
+          },
+          "footer": {
+            "text": "Native · novo ensaio autorizado"
+          },
+          "nativeFlowMessage": {
+            "buttons": [
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\"Teste iOS\",\"id\":\"sample_N15_ios\"}"
+              },
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\"Teste Web\",\"id\":\"sample_N15_web\"}"
+              }
+            ]
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N16:DIRECT:native-render-flow-controls-candidates.mjs",
+      "sampleId": "N16",
+      "carrier": "DIRECT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "messageContextInfo": {
+          "messageSecret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        },
+        "interactiveMessage": {
+          "body": {
+            "text": "N16 · Controle de botões. PRIMEIRO NO iOS: toque Teste iOS e confira se a escolha é enviada. Ainda não selecione no Web."
+          },
+          "footer": {
+            "text": "Native · novo ensaio autorizado"
+          },
+          "nativeFlowMessage": {
+            "buttons": [
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\"Teste iOS\",\"id\":\"sample_N16_ios\"}"
+              },
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\"Teste Web\",\"id\":\"sample_N16_web\"}"
+              }
+            ],
+            "messageParamsJson": "{\"from\":\"api\",\"templateId\":\"075b1d24-6fdc-4159-9b35-a15ef2ff0598\"}",
+            "messageVersion": 1
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N21:DIRECT:native-render-fork-recipe-candidates.mjs",
+      "sampleId": "N21",
+      "carrier": "DIRECT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "messageContextInfo": {
+          "deviceListMetadata": {
+            "recipientKeyHash": "AAAAAAAAAAAAAA==",
+            "recipientTimestamp": 1791244800
+          },
+          "deviceListMetadataVersion": 2,
+          "messageSecret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        },
+        "interactiveMessage": {
+          "body": {
+            "text": "N21 · Controle da receita completa de botões do fork. PRIMEIRO NO iOS: toque Teste iOS e confira se a escolha é enviada. Ainda não selecione no Web."
+          },
+          "footer": {
+            "text": "Native · ensaio autorizado"
+          },
+          "nativeFlowMessage": {
+            "buttons": [
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\"Teste iOS\",\"id\":\"sample_N21_ios\"}"
+              },
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\"Teste Web\",\"id\":\"sample_N21_web\"}"
+              }
+            ],
+            "messageParamsJson": "{}"
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {
+            "actual_actors": "2",
+            "host_storage": "2",
+            "privacy_mode_ts": "1791346326"
+          },
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "quality_control",
+              "attrs": {
+                "decision_id": "0000000000000000000000000000000000000000",
+                "source_type": "third_party"
+              },
+              "content": [
+                {
+                  "tag": "decision_source",
+                  "attrs": {
+                    "value": "df"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N22:DIRECT:native-render-fork-recipe-candidates.mjs",
+      "sampleId": "N22",
+      "carrier": "DIRECT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "buttonsMessage",
+      "message": {
+        "messageContextInfo": {
+          "deviceListMetadata": {
+            "recipientKeyHash": "AAAAAAAAAAAAAA==",
+            "recipientTimestamp": 1791244800
+          },
+          "deviceListMetadataVersion": 2,
+          "messageSecret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        },
+        "buttonsMessage": {
+          "contentText": "N22 · Controle da receita completa de botões do fork. PRIMEIRO NO iOS: toque Teste iOS e confira se a escolha é enviada. Ainda não selecione no Web.",
+          "footerText": "Native · ensaio autorizado",
+          "buttons": [
+            {
+              "buttonId": "sample_N22_ios",
+              "buttonText": {
+                "displayText": "Teste iOS"
+              },
+              "type": "RESPONSE"
+            },
+            {
+              "buttonId": "sample_N22_web",
+              "buttonText": {
+                "displayText": "Teste Web"
+              },
+              "type": "RESPONSE"
+            }
+          ],
+          "headerType": "EMPTY"
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {
+            "actual_actors": "2",
+            "host_storage": "2",
+            "privacy_mode_ts": "1791346326"
+          },
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "quality_control",
+              "attrs": {
+                "decision_id": "0000000000000000000000000000000000000000",
+                "source_type": "third_party"
+              },
+              "content": [
+                {
+                  "tag": "decision_source",
+                  "attrs": {
+                    "value": "df"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N06:DIRECT:native-render-ios-first-candidates.mjs",
+      "sampleId": "N06",
+      "carrier": "DIRECT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "interactiveMessage": {
+          "body": {
+            "text": "N06 · Controle novo: PRIMEIRO NO iOS. No celular, toque Teste iOS e confira se a escolha é enviada. Ainda não selecione no Web."
+          },
+          "footer": {
+            "text": "Native · novo ensaio autorizado"
+          },
+          "nativeFlowMessage": {
+            "buttons": [
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\"Teste iOS\",\"id\":\"sample_N06_ios\"}"
+              },
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\"Teste Web\",\"id\":\"sample_N06_web\"}"
+              }
+            ],
+            "messageParamsJson": "{\"from\":\"api\",\"templateId\":\"0292685f-dfca-4edf-8cac-7407979728a6\"}"
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N07:DIRECT:native-render-ios-first-candidates.mjs",
+      "sampleId": "N07",
+      "carrier": "DIRECT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "interactiveMessage": {
+          "header": {
+            "imageMessage": {
+              "url": "https://example.invalid/fixtures/card-1.enc",
+              "mimetype": "image/jpeg",
+              "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+              "fileLength": 1,
+              "height": 512,
+              "width": 512,
+              "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+              "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+              "directPath": "/fixtures/card-1.enc"
+            },
+            "hasMediaAttachment": true
+          },
+          "body": {
+            "text": "N07 · Controle novo: PRIMEIRO NO iOS. No celular, toque Teste iOS e confira se a escolha é enviada. Ainda não selecione no Web."
+          },
+          "footer": {
+            "text": "Native · novo ensaio autorizado"
+          },
+          "nativeFlowMessage": {
+            "buttons": [
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\"Teste iOS\",\"id\":\"sample_N07_ios\"}"
+              },
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\"Teste Web\",\"id\":\"sample_N07_web\"}"
+              }
+            ],
+            "messageParamsJson": "{\"from\":\"api\",\"templateId\":\"b3266bed-76c3-41cc-b76a-9d2454134f12\"}"
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N08:DIRECT:native-render-ios-first-candidates.mjs",
+      "sampleId": "N08",
+      "carrier": "DIRECT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "interactiveMessage": {
+          "body": {
+            "text": "N08 · Carrossel novo: PRIMEIRO NO iOS. No celular, navegue até o cartão 1 azul e toque Escolher cartão 1. Ainda não selecione no Web."
+          },
+          "carouselMessage": {
+            "cards": [
+              {
+                "header": {
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-1.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-1.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N08 · Cartão 1"
+                },
+                "footer": {
+                  "text": "Native · novo ensaio autorizado"
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 1\",\"id\":\"sample_N08_1\"}"
+                    }
+                  ]
+                }
+              },
+              {
+                "header": {
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-2.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-2.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N08 · Cartão 2"
+                },
+                "footer": {
+                  "text": "Native · novo ensaio autorizado"
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 2\",\"id\":\"sample_N08_2\"}"
+                    }
+                  ]
+                }
+              }
+            ],
+            "messageVersion": 1
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N23:DOCUMENT_CARRIER:native-render-legacy-wrapper-candidates.mjs",
+      "sampleId": "N23",
+      "carrier": "DOCUMENT_CARRIER",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "buttonsMessage",
+      "message": {
+        "messageContextInfo": {
+          "deviceListMetadata": {
+            "recipientKeyHash": "AAAAAAAAAAAAAA==",
+            "recipientTimestamp": 1791244800
+          },
+          "deviceListMetadataVersion": 2,
+          "messageSecret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        },
+        "documentWithCaptionMessage": {
+          "message": {
+            "buttonsMessage": {
+              "contentText": "N23 · Controle do mesmo payload legado com envelope para Web. PRIMEIRO NO iOS: toque Teste iOS e confira se a escolha é enviada. Ainda não selecione no outro cliente.",
+              "footerText": "Native · ensaio autorizado",
+              "buttons": [
+                {
+                  "buttonId": "sample_N23_ios",
+                  "buttonText": {
+                    "displayText": "Teste iOS"
+                  },
+                  "type": "RESPONSE"
+                },
+                {
+                  "buttonId": "sample_N23_web",
+                  "buttonText": {
+                    "displayText": "Teste Web"
+                  },
+                  "type": "RESPONSE"
+                }
+              ],
+              "headerType": "EMPTY"
+            }
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {
+            "actual_actors": "2",
+            "host_storage": "2",
+            "privacy_mode_ts": "1791346326"
+          },
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "quality_control",
+              "attrs": {
+                "decision_id": "0000000000000000000000000000000000000000",
+                "source_type": "third_party"
+              },
+              "content": [
+                {
+                  "tag": "decision_source",
+                  "attrs": {
+                    "value": "df"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N24:DOCUMENT_CARRIER:native-render-legacy-wrapper-candidates.mjs",
+      "sampleId": "N24",
+      "carrier": "DOCUMENT_CARRIER",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "buttonsMessage",
+      "message": {
+        "messageContextInfo": {
+          "deviceListMetadata": {
+            "recipientKeyHash": "AAAAAAAAAAAAAA==",
+            "recipientTimestamp": 1791244800
+          },
+          "deviceListMetadataVersion": 2,
+          "messageSecret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        },
+        "documentWithCaptionMessage": {
+          "message": {
+            "buttonsMessage": {
+              "contentText": "N24 · Controle do mesmo payload legado com envelope para Web. PRIMEIRO NO Web: toque Teste Web e confira se a escolha é enviada. Ainda não selecione no outro cliente.",
+              "footerText": "Native · ensaio autorizado",
+              "buttons": [
+                {
+                  "buttonId": "sample_N24_ios",
+                  "buttonText": {
+                    "displayText": "Teste iOS"
+                  },
+                  "type": "RESPONSE"
+                },
+                {
+                  "buttonId": "sample_N24_web",
+                  "buttonText": {
+                    "displayText": "Teste Web"
+                  },
+                  "type": "RESPONSE"
+                }
+              ],
+              "headerType": "EMPTY"
+            }
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {
+            "actual_actors": "2",
+            "host_storage": "2",
+            "privacy_mode_ts": "1791346326"
+          },
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "quality_control",
+              "attrs": {
+                "decision_id": "0000000000000000000000000000000000000000",
+                "source_type": "third_party"
+              },
+              "content": [
+                {
+                  "tag": "decision_source",
+                  "attrs": {
+                    "value": "df"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N25:DOCUMENT_CARRIER:native-render-media-recipe-candidates.mjs",
+      "sampleId": "N25",
+      "carrier": "DOCUMENT_CARRIER",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "buttonsMessage",
+      "message": {
+        "messageContextInfo": {
+          "deviceListMetadata": {
+            "recipientKeyHash": "AAAAAAAAAAAAAA==",
+            "recipientTimestamp": 1791244800
+          },
+          "deviceListMetadataVersion": 2,
+          "messageSecret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        },
+        "documentWithCaptionMessage": {
+          "message": {
+            "buttonsMessage": {
+              "imageMessage": {
+                "url": "https://example.invalid/fixtures/card-1.enc",
+                "mimetype": "image/jpeg",
+                "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                "fileLength": 1,
+                "height": 512,
+                "width": 512,
+                "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                "directPath": "/fixtures/card-1.enc"
+              },
+              "contentText": "N25 · Card azul com opções. PRIMEIRO NO iOS: confira a imagem azul e toque Teste iOS. Ainda não selecione no outro cliente.",
+              "footerText": "Native · ensaio autorizado",
+              "buttons": [
+                {
+                  "buttonId": "sample_N25_ios",
+                  "buttonText": {
+                    "displayText": "Teste iOS"
+                  },
+                  "type": "RESPONSE"
+                },
+                {
+                  "buttonId": "sample_N25_web",
+                  "buttonText": {
+                    "displayText": "Teste Web"
+                  },
+                  "type": "RESPONSE"
+                }
+              ],
+              "headerType": "IMAGE"
+            }
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {
+            "actual_actors": "2",
+            "host_storage": "2",
+            "privacy_mode_ts": "1791346326"
+          },
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "quality_control",
+              "attrs": {
+                "decision_id": "0000000000000000000000000000000000000000",
+                "source_type": "third_party"
+              },
+              "content": [
+                {
+                  "tag": "decision_source",
+                  "attrs": {
+                    "value": "df"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N26:DOCUMENT_CARRIER:native-render-media-recipe-candidates.mjs",
+      "sampleId": "N26",
+      "carrier": "DOCUMENT_CARRIER",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "buttonsMessage",
+      "message": {
+        "messageContextInfo": {
+          "deviceListMetadata": {
+            "recipientKeyHash": "AAAAAAAAAAAAAA==",
+            "recipientTimestamp": 1791244800
+          },
+          "deviceListMetadataVersion": 2,
+          "messageSecret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        },
+        "documentWithCaptionMessage": {
+          "message": {
+            "buttonsMessage": {
+              "imageMessage": {
+                "url": "https://example.invalid/fixtures/card-1.enc",
+                "mimetype": "image/jpeg",
+                "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                "fileLength": 1,
+                "height": 512,
+                "width": 512,
+                "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                "directPath": "/fixtures/card-1.enc"
+              },
+              "contentText": "N26 · Card azul com opções. PRIMEIRO NO Web: confira a imagem azul e toque Teste Web. Ainda não selecione no outro cliente.",
+              "footerText": "Native · ensaio autorizado",
+              "buttons": [
+                {
+                  "buttonId": "sample_N26_ios",
+                  "buttonText": {
+                    "displayText": "Teste iOS"
+                  },
+                  "type": "RESPONSE"
+                },
+                {
+                  "buttonId": "sample_N26_web",
+                  "buttonText": {
+                    "displayText": "Teste Web"
+                  },
+                  "type": "RESPONSE"
+                }
+              ],
+              "headerType": "IMAGE"
+            }
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {
+            "actual_actors": "2",
+            "host_storage": "2",
+            "privacy_mode_ts": "1791346326"
+          },
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "quality_control",
+              "attrs": {
+                "decision_id": "0000000000000000000000000000000000000000",
+                "source_type": "third_party"
+              },
+              "content": [
+                {
+                  "tag": "decision_source",
+                  "attrs": {
+                    "value": "df"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N27:DIRECT:native-render-media-recipe-candidates.mjs",
+      "sampleId": "N27",
+      "carrier": "DIRECT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "messageContextInfo": {
+          "deviceListMetadata": {
+            "recipientKeyHash": "AAAAAAAAAAAAAA==",
+            "recipientTimestamp": 1791244800
+          },
+          "deviceListMetadataVersion": 2,
+          "messageSecret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        },
+        "interactiveMessage": {
+          "body": {
+            "text": "N27 · Carrossel da receita da fonte. PRIMEIRO NO iOS: confira os dois cartões, azul e laranja, e toque Escolher cartão 1. Ainda não selecione no outro cliente."
+          },
+          "footer": {
+            "text": "Native · ensaio autorizado"
+          },
+          "carouselMessage": {
+            "cards": [
+              {
+                "header": {
+                  "title": "",
+                  "subtitle": "",
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-1.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-1.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N27 · Cartão 1 · azul"
+                },
+                "footer": {
+                  "text": "Native · ensaio autorizado"
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 1\",\"id\":\"sample_N27_1\"}"
+                    }
+                  ],
+                  "messageParamsJson": "{}"
+                }
+              },
+              {
+                "header": {
+                  "title": "",
+                  "subtitle": "",
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-2.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-2.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N27 · Cartão 2 · laranja"
+                },
+                "footer": {
+                  "text": "Native · ensaio autorizado"
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 2\",\"id\":\"sample_N27_2\"}"
+                    }
+                  ],
+                  "messageParamsJson": "{}"
+                }
+              }
+            ],
+            "messageVersion": 1,
+            "carouselCardType": "UNKNOWN"
+          }
+        }
+      },
+      "relayNodes": []
+    },
+    {
+      "key": "N28:DIRECT:native-render-media-recipe-candidates.mjs",
+      "sampleId": "N28",
+      "carrier": "DIRECT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "messageContextInfo": {
+          "deviceListMetadata": {
+            "recipientKeyHash": "AAAAAAAAAAAAAA==",
+            "recipientTimestamp": 1791244800
+          },
+          "deviceListMetadataVersion": 2,
+          "messageSecret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        },
+        "interactiveMessage": {
+          "body": {
+            "text": "N28 · Carrossel da receita da fonte. PRIMEIRO NO Web: confira os dois cartões, azul e laranja, e toque Escolher cartão 2. Ainda não selecione no outro cliente."
+          },
+          "footer": {
+            "text": "Native · ensaio autorizado"
+          },
+          "carouselMessage": {
+            "cards": [
+              {
+                "header": {
+                  "title": "",
+                  "subtitle": "",
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-1.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-1.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N28 · Cartão 1 · azul"
+                },
+                "footer": {
+                  "text": "Native · ensaio autorizado"
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 1\",\"id\":\"sample_N28_1\"}"
+                    }
+                  ],
+                  "messageParamsJson": "{}"
+                }
+              },
+              {
+                "header": {
+                  "title": "",
+                  "subtitle": "",
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-2.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-2.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N28 · Cartão 2 · laranja"
+                },
+                "footer": {
+                  "text": "Native · ensaio autorizado"
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 2\",\"id\":\"sample_N28_2\"}"
+                    }
+                  ],
+                  "messageParamsJson": "{}"
+                }
+              }
+            ],
+            "messageVersion": 1,
+            "carouselCardType": "UNKNOWN"
+          }
+        }
+      },
+      "relayNodes": []
+    },
+    {
+      "key": "N20:VIEW_ONCE_CARRIER:native-render-mobile-shape-candidate.mjs",
+      "sampleId": "N20",
+      "carrier": "VIEW_ONCE_CARRIER",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "messageContextInfo": {
+          "messageSecret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        },
+        "viewOnceMessage": {
+          "message": {
+            "interactiveMessage": {
+              "header": {
+                "title": "Native · controle móvel",
+                "hasMediaAttachment": false
+              },
+              "body": {
+                "text": "N20 · Controle do payload móvel declarado no WA-JS. PRIMEIRO NO iOS: tente Teste iOS antes de usar o Web. Confira se permite enviar a escolha."
+              },
+              "footer": {
+                "text": "Native · ensaio autorizado"
+              },
+              "nativeFlowMessage": {
+                "buttons": [
+                  {
+                    "name": "quick_reply",
+                    "buttonParamsJson": "{\"display_text\":\"Teste iOS\",\"id\":\"sample_N20_ios\"}"
+                  },
+                  {
+                    "name": "quick_reply",
+                    "buttonParamsJson": "{\"display_text\":\"Teste Web\",\"id\":\"sample_N20_web\"}"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "relayNodes": []
+    },
+    {
+      "key": "N51:DIRECT_PLAIN_FLOW_VERSION_3:native-render-plain-flow-v3-candidates.mjs",
+      "sampleId": "N51",
+      "carrier": "DIRECT_PLAIN_FLOW_VERSION_3",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "interactiveMessage": {
+          "body": {
+            "text": "N51 · Diagnóstico de um botão nativo simples, sem carrossel. PRIMEIRO NO iOS: toque Teste iOS e confira se a escolha é enviada. Se estiver desabilitado, teste no Web."
+          },
+          "nativeFlowMessage": {
+            "buttons": [
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\"Teste iOS\",\"id\":\"sample_N51_ios\"}"
+              }
+            ],
+            "messageVersion": 3
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N09:DIRECT:native-render-recipient-candidates.mjs",
+      "sampleId": "N09",
+      "carrier": "DIRECT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "interactiveMessage": {
+          "body": {
+            "text": "N09 · Controle novo: PRIMEIRO NO iOS. No celular, toque Teste iOS e confira se a escolha é enviada. Ainda não selecione no Web."
+          },
+          "footer": {
+            "text": "Native · novo ensaio autorizado"
+          },
+          "nativeFlowMessage": {
+            "buttons": [
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\"Teste iOS\",\"id\":\"sample_N09_ios\"}"
+              },
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\"Teste Web\",\"id\":\"sample_N09_web\"}"
+              }
+            ],
+            "messageParamsJson": "{\"from\":\"api\",\"templateId\":\"6d39771d-f284-45df-9dab-dc13a793feb1\"}"
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N10:DIRECT:native-render-recipient-candidates.mjs",
+      "sampleId": "N10",
+      "carrier": "DIRECT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "interactiveMessage": {
+          "header": {
+            "imageMessage": {
+              "url": "https://example.invalid/fixtures/card-1.enc",
+              "mimetype": "image/jpeg",
+              "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+              "fileLength": 1,
+              "height": 512,
+              "width": 512,
+              "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+              "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+              "directPath": "/fixtures/card-1.enc"
+            },
+            "hasMediaAttachment": true
+          },
+          "body": {
+            "text": "N10 · Controle novo: PRIMEIRO NO iOS. No celular, toque Teste iOS e confira se a escolha é enviada. Ainda não selecione no Web."
+          },
+          "footer": {
+            "text": "Native · novo ensaio autorizado"
+          },
+          "nativeFlowMessage": {
+            "buttons": [
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\"Teste iOS\",\"id\":\"sample_N10_ios\"}"
+              },
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\"Teste Web\",\"id\":\"sample_N10_web\"}"
+              }
+            ],
+            "messageParamsJson": "{\"from\":\"api\",\"templateId\":\"ef8f4836-4255-4177-968c-25ade7fdb410\"}"
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N11:DIRECT:native-render-recipient-candidates.mjs",
+      "sampleId": "N11",
+      "carrier": "DIRECT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "interactiveMessage": {
+          "body": {
+            "text": "N11 · Carrossel novo: PRIMEIRO NO iOS. No celular, navegue até o cartão 1 azul e toque Escolher cartão 1. Ainda não selecione no Web."
+          },
+          "carouselMessage": {
+            "cards": [
+              {
+                "header": {
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-1.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-1.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N11 · Cartão 1"
+                },
+                "footer": {
+                  "text": "Native · novo ensaio autorizado"
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 1\",\"id\":\"sample_N11_1\"}"
+                    }
+                  ]
+                }
+              },
+              {
+                "header": {
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-2.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-2.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N11 · Cartão 2"
+                },
+                "footer": {
+                  "text": "Native · novo ensaio autorizado"
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 2\",\"id\":\"sample_N11_2\"}"
+                    }
+                  ]
+                }
+              }
+            ],
+            "messageVersion": 1
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N13:DIRECT:native-render-secret-controls-candidates.mjs",
+      "sampleId": "N13",
+      "carrier": "DIRECT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "messageContextInfo": {
+          "messageSecret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        },
+        "interactiveMessage": {
+          "body": {
+            "text": "N13 · Controle de botões. PRIMEIRO NO iOS: toque Teste iOS e confira se a escolha é enviada. Ainda não selecione no Web."
+          },
+          "footer": {
+            "text": "Native · novo ensaio autorizado"
+          },
+          "nativeFlowMessage": {
+            "buttons": [
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\"Teste iOS\",\"id\":\"sample_N13_ios\"}"
+              },
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\"Teste Web\",\"id\":\"sample_N13_web\"}"
+              }
+            ],
+            "messageParamsJson": "{\"from\":\"api\",\"templateId\":\"55366fc5-6f25-416a-abb3-b798b5b871b2\"}"
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N14:DIRECT:native-render-secret-controls-candidates.mjs",
+      "sampleId": "N14",
+      "carrier": "DIRECT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "messageContextInfo": {
+          "messageSecret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        },
+        "interactiveMessage": {
+          "body": {
+            "text": "N14 · Controle de botões. PRIMEIRO NO iOS: toque Teste iOS e confira se a escolha é enviada. Ainda não selecione no Web."
+          },
+          "footer": {
+            "text": "Native · novo ensaio autorizado"
+          },
+          "nativeFlowMessage": {
+            "buttons": [
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\"Teste iOS\",\"id\":\"sample_N14_ios\"}"
+              },
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\"Teste Web\",\"id\":\"sample_N14_web\"}"
+              }
+            ],
+            "messageParamsJson": "{\"from\":\"api\",\"templateId\":\"55366fc5-6f25-416a-abb3-b798b5b871b2\"}"
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "bot",
+          "attrs": {
+            "biz_bot": "1"
+          }
+        }
+      ]
+    },
+    {
+      "key": "I01:INITIAL:DOCUMENT",
+      "sampleId": "I01",
+      "carrier": "DOCUMENT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "documentWithCaptionMessage": {
+          "message": {
+            "interactiveMessage": {
+              "header": {
+                "title": "I01",
+                "hasMediaAttachment": false
+              },
+              "body": {
+                "text": "I01 · Botões de resposta. Se aparecerem, toque Opção A no iOS e Opção B no WhatsApp Web. Registre se aparecer somente o texto, um aviso de incompatibilidade ou nada."
+              },
+              "footer": {
+                "text": "Native · ensaio autorizado de desenvolvimento"
+              },
+              "nativeFlowMessage": {
+                "buttons": [
+                  {
+                    "name": "quick_reply",
+                    "buttonParamsJson": "{\"display_text\":\"Opção A\",\"id\":\"sample_I01_A\"}"
+                  },
+                  {
+                    "name": "quick_reply",
+                    "buttonParamsJson": "{\"display_text\":\"Opção B\",\"id\":\"sample_I01_B\"}"
+                  }
+                ],
+                "messageVersion": 1
+              }
+            }
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "I02:INITIAL:DOCUMENT",
+      "sampleId": "I02",
+      "carrier": "DOCUMENT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "documentWithCaptionMessage": {
+          "message": {
+            "interactiveMessage": {
+              "header": {
+                "title": "I02",
+                "hasMediaAttachment": false
+              },
+              "body": {
+                "text": "I02 · Botão de URL. No iOS e no WhatsApp Web, toque Abrir Baileys e confira se abre o repositório WhiskeySockets/Baileys no GitHub."
+              },
+              "footer": {
+                "text": "Native · ensaio autorizado de desenvolvimento"
+              },
+              "nativeFlowMessage": {
+                "buttons": [
+                  {
+                    "name": "cta_url",
+                    "buttonParamsJson": "{\"display_text\":\"Abrir Baileys\",\"url\":\"https://github.com/WhiskeySockets/Baileys\",\"merchant_url\":\"https://github.com/WhiskeySockets/Baileys\"}"
+                  }
+                ],
+                "messageVersion": 1
+              }
+            }
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "I03:INITIAL:DOCUMENT",
+      "sampleId": "I03",
+      "carrier": "DOCUMENT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "documentWithCaptionMessage": {
+          "message": {
+            "interactiveMessage": {
+              "header": {
+                "title": "I03",
+                "hasMediaAttachment": false
+              },
+              "body": {
+                "text": "I03 · Lista com três opções. Abra Escolher opção, selecione Primeira no iOS e Segunda no WhatsApp Web. Registre se a lista abre e se a escolha é enviada."
+              },
+              "footer": {
+                "text": "Native · ensaio autorizado de desenvolvimento"
+              },
+              "nativeFlowMessage": {
+                "buttons": [
+                  {
+                    "name": "single_select",
+                    "buttonParamsJson": "{\"title\":\"Escolher opção\",\"sections\":[{\"title\":\"Opções de teste\",\"rows\":[{\"id\":\"sample_I03_1\",\"title\":\"Primeira\",\"description\":\"Escolha no iOS\"},{\"id\":\"sample_I03_2\",\"title\":\"Segunda\",\"description\":\"Escolha no Web\"},{\"id\":\"sample_I03_3\",\"title\":\"Terceira\",\"description\":\"Opção adicional\"}]}]}"
+                  }
+                ],
+                "messageVersion": 1
+              }
+            }
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "I01M:INITIAL:DOCUMENT_WITH_DEVICE_METADATA",
+      "sampleId": "I01M",
+      "carrier": "DOCUMENT_WITH_DEVICE_METADATA",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "messageContextInfo": {
+          "deviceListMetadata": {},
+          "deviceListMetadataVersion": 2
+        },
+        "documentWithCaptionMessage": {
+          "message": {
+            "interactiveMessage": {
+              "header": {
+                "title": "I01M",
+                "hasMediaAttachment": false
+              },
+              "body": {
+                "text": "I01M · Os mesmos dois botões, com metadados de dispositivo no envelope. Compare iOS e Web. Se aparecerem, toque Opção A no iOS e Opção B no Web."
+              },
+              "footer": {
+                "text": "Native · ensaio autorizado de desenvolvimento"
+              },
+              "nativeFlowMessage": {
+                "buttons": [
+                  {
+                    "name": "quick_reply",
+                    "buttonParamsJson": "{\"display_text\":\"Opção A\",\"id\":\"sample_I01M_A\"}"
+                  },
+                  {
+                    "name": "quick_reply",
+                    "buttonParamsJson": "{\"display_text\":\"Opção B\",\"id\":\"sample_I01M_B\"}"
+                  }
+                ],
+                "messageVersion": 1
+              }
+            }
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "I01V:INITIAL:VIEW_ONCE_CARRIER",
+      "sampleId": "I01V",
+      "carrier": "VIEW_ONCE_CARRIER",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "messageContextInfo": {
+          "deviceListMetadata": {},
+          "deviceListMetadataVersion": 2
+        },
+        "viewOnceMessage": {
+          "message": {
+            "interactiveMessage": {
+              "header": {
+                "title": "I01V",
+                "hasMediaAttachment": false
+              },
+              "body": {
+                "text": "I01V · Variante de envelope do teste de botões. Toque Opção A no iOS e Opção B no WhatsApp Web, se aparecerem."
+              },
+              "footer": {
+                "text": "Native · ensaio autorizado de desenvolvimento"
+              },
+              "nativeFlowMessage": {
+                "buttons": [
+                  {
+                    "name": "quick_reply",
+                    "buttonParamsJson": "{\"display_text\":\"Opção A\",\"id\":\"sample_I01V_A\"}"
+                  },
+                  {
+                    "name": "quick_reply",
+                    "buttonParamsJson": "{\"display_text\":\"Opção B\",\"id\":\"sample_I01V_B\"}"
+                  }
+                ],
+                "messageVersion": 1
+              }
+            }
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "I05:INITIAL:DOCUMENT",
+      "sampleId": "I05",
+      "carrier": "DOCUMENT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "listMessage",
+      "message": {
+        "documentWithCaptionMessage": {
+          "message": {
+            "listMessage": {
+              "title": "I05 · Lista alternativa",
+              "description": "Abra Escolher opção. Selecione Primeira no iOS e Segunda no WhatsApp Web.",
+              "buttonText": "Escolher opção",
+              "listType": "SINGLE_SELECT",
+              "sections": [
+                {
+                  "title": "Opções de teste",
+                  "rows": [
+                    {
+                      "title": "Primeira",
+                      "description": "Escolha no iOS",
+                      "rowId": "sample_I05_1"
+                    },
+                    {
+                      "title": "Segunda",
+                      "description": "Escolha no Web",
+                      "rowId": "sample_I05_2"
+                    },
+                    {
+                      "title": "Terceira",
+                      "description": "Opção adicional",
+                      "rowId": "sample_I05_3"
+                    }
+                  ]
+                }
+              ],
+              "footerText": "Native · ensaio autorizado de desenvolvimento"
+            }
+          }
+        }
+      },
+      "relayNodes": []
+    },
+    {
+      "key": "I04:INITIAL:DOCUMENT",
+      "sampleId": "I04",
+      "carrier": "DOCUMENT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "documentWithCaptionMessage": {
+          "message": {
+            "interactiveMessage": {
+              "body": {
+                "text": "I04 · Carrossel de duas imagens. Navegue pelos cartões no iOS e no WhatsApp Web. Escolha Cartão 1 no iOS e Cartão 2 no Web."
+              },
+              "carouselMessage": {
+                "cards": [
+                  {
+                    "header": {
+                      "title": "I04 · Cartão 1",
+                      "imageMessage": {
+                        "url": "https://example.invalid/fixtures/card-1.enc",
+                        "mimetype": "image/jpeg",
+                        "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                        "fileLength": 1,
+                        "height": 512,
+                        "width": 512,
+                        "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                        "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                        "directPath": "/fixtures/card-1.enc"
+                      },
+                      "hasMediaAttachment": true
+                    },
+                    "body": {
+                      "text": "I04 · Cartão 1"
+                    },
+                    "nativeFlowMessage": {
+                      "buttons": [
+                        {
+                          "name": "quick_reply",
+                          "buttonParamsJson": "{\"display_text\":\"Cartão 1\",\"id\":\"sample_I04_1\"}"
+                        }
+                      ],
+                      "messageVersion": 1
+                    }
+                  },
+                  {
+                    "header": {
+                      "title": "I04 · Cartão 2",
+                      "imageMessage": {
+                        "url": "https://example.invalid/fixtures/card-2.enc",
+                        "mimetype": "image/jpeg",
+                        "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                        "fileLength": 1,
+                        "height": 512,
+                        "width": 512,
+                        "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                        "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                        "directPath": "/fixtures/card-2.enc"
+                      },
+                      "hasMediaAttachment": true
+                    },
+                    "body": {
+                      "text": "I04 · Cartão 2"
+                    },
+                    "nativeFlowMessage": {
+                      "buttons": [
+                        {
+                          "name": "quick_reply",
+                          "buttonParamsJson": "{\"display_text\":\"Cartão 2\",\"id\":\"sample_I04_2\"}"
+                        }
+                      ],
+                      "messageVersion": 1
+                    }
+                  }
+                ],
+                "messageVersion": 1
+              }
+            }
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

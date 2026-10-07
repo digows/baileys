@@ -35,6 +35,7 @@ import {
 	parseAndInjectE2ESessions,
 	unixTimestampSeconds
 } from '../Utils'
+import { getInteractiveMessageRelayNodes, isInteractiveMessageContent } from '../Utils/interactive-messages'
 import { getUrlInfo } from '../Utils/link-preview'
 import { makeKeyedMutex, makeMutex } from '../Utils/make-mutex'
 import { getMessageReportingToken, shouldIncludeReportingToken } from '../Utils/reporting-utils'
@@ -1370,7 +1371,9 @@ export const makeMessagesSocket = (config: SocketConfig) => {
 				const isPinMsg = 'pin' in content && !!content.pin
 				const isPollMessage = 'poll' in content && !!content.poll
 				const additionalAttributes: BinaryNodeAttributes = {}
-				const additionalNodes: BinaryNode[] = []
+				const additionalNodes: BinaryNode[] = isInteractiveMessageContent(content)
+					? getInteractiveMessageRelayNodes(content)
+					: []
 				// required for delete
 				if (isDeleteMsg) {
 					// if the chat is a group, and I am not the author, then delete the message as an admin

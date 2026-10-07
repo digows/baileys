@@ -461,6 +461,12 @@ The store also provides some simple functions such as `loadMessages` that utiliz
 
 ## Sending Messages
 
+Typed reply buttons, image reply cards, URL actions, single-select lists and image
+carousels are described in [Native interactive messages](./NATIVE_INTERACTIVE_MESSAGES.md),
+with [manual examples](./Example/native-interactive-messages.ts) and the complete
+[compatibility evidence](./baileys-native-interactive-evidence/README.md).
+The selected carousel has a documented iOS reply-selection limitation.
+
 - Send all types of messages with a single function
     - **In the [AnyMessageContent type alias](https://baileys.wiki/docs/api/type-aliases/AnyMessageContent/) you can see all message contents supported, like text message**
     - **In the [MiscMessageGenerationOptions type alias](https://baileys.wiki/docs/api/type-aliases/MiscMessageGenerationOptions/) you can see all options supported, like quote message**

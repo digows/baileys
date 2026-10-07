@@ -1,0 +1,410 @@
+{
+  "libraryRevision": "0af2386292907f7d9742d8d41f830d8c48208fa1",
+  "testDatesUtc": [
+    "2026-10-06",
+    "2026-10-07"
+  ],
+  "renderingEvidence": "Human observations; account and client build numbers were not recorded",
+  "normalization": "Application labels and option-ID prefixes renamed consistently; transport IDs retained. Secrets, recipient hashes and media metadata in structural fixtures are synthetic replacements. Fixtures are not captured server echoes.",
+  "externalApplicationDependencies": false,
+  "fixtures": [
+    {
+      "key": "N23:DOCUMENT_CARRIER:native-render-legacy-wrapper-candidates.mjs",
+      "sampleId": "N23",
+      "carrier": "DOCUMENT_CARRIER",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "buttonsMessage",
+      "message": {
+        "messageContextInfo": {
+          "deviceListMetadata": {
+            "recipientKeyHash": "AAAAAAAAAAAAAA==",
+            "recipientTimestamp": 1791244800
+          },
+          "deviceListMetadataVersion": 2,
+          "messageSecret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        },
+        "documentWithCaptionMessage": {
+          "message": {
+            "buttonsMessage": {
+              "contentText": "N23 · Controle do mesmo payload legado com envelope para Web. PRIMEIRO NO iOS: toque Teste iOS e confira se a escolha é enviada. Ainda não selecione no outro cliente.",
+              "footerText": "Native · ensaio autorizado",
+              "buttons": [
+                {
+                  "buttonId": "sample_N23_ios",
+                  "buttonText": {
+                    "displayText": "Teste iOS"
+                  },
+                  "type": "RESPONSE"
+                },
+                {
+                  "buttonId": "sample_N23_web",
+                  "buttonText": {
+                    "displayText": "Teste Web"
+                  },
+                  "type": "RESPONSE"
+                }
+              ],
+              "headerType": "EMPTY"
+            }
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {
+            "actual_actors": "2",
+            "host_storage": "2",
+            "privacy_mode_ts": "1791346326"
+          },
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "quality_control",
+              "attrs": {
+                "decision_id": "0000000000000000000000000000000000000000",
+                "source_type": "third_party"
+              },
+              "content": [
+                {
+                  "tag": "decision_source",
+                  "attrs": {
+                    "value": "df"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N25:DOCUMENT_CARRIER:native-render-media-recipe-candidates.mjs",
+      "sampleId": "N25",
+      "carrier": "DOCUMENT_CARRIER",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "buttonsMessage",
+      "message": {
+        "messageContextInfo": {
+          "deviceListMetadata": {
+            "recipientKeyHash": "AAAAAAAAAAAAAA==",
+            "recipientTimestamp": 1791244800
+          },
+          "deviceListMetadataVersion": 2,
+          "messageSecret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        },
+        "documentWithCaptionMessage": {
+          "message": {
+            "buttonsMessage": {
+              "imageMessage": {
+                "url": "https://example.invalid/fixtures/card-1.enc",
+                "mimetype": "image/jpeg",
+                "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                "fileLength": 1,
+                "height": 512,
+                "width": 512,
+                "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                "directPath": "/fixtures/card-1.enc"
+              },
+              "contentText": "N25 · Card azul com opções. PRIMEIRO NO iOS: confira a imagem azul e toque Teste iOS. Ainda não selecione no outro cliente.",
+              "footerText": "Native · ensaio autorizado",
+              "buttons": [
+                {
+                  "buttonId": "sample_N25_ios",
+                  "buttonText": {
+                    "displayText": "Teste iOS"
+                  },
+                  "type": "RESPONSE"
+                },
+                {
+                  "buttonId": "sample_N25_web",
+                  "buttonText": {
+                    "displayText": "Teste Web"
+                  },
+                  "type": "RESPONSE"
+                }
+              ],
+              "headerType": "IMAGE"
+            }
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {
+            "actual_actors": "2",
+            "host_storage": "2",
+            "privacy_mode_ts": "1791346326"
+          },
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "quality_control",
+              "attrs": {
+                "decision_id": "0000000000000000000000000000000000000000",
+                "source_type": "third_party"
+              },
+              "content": [
+                {
+                  "tag": "decision_source",
+                  "attrs": {
+                    "value": "df"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N03:DIRECT:native-render-candidates.mjs",
+      "sampleId": "N03",
+      "carrier": "DIRECT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "interactiveMessage": {
+          "body": {
+            "text": "N03 · Botão de URL. No iOS e no WhatsApp Web, toque Abrir Baileys e confira se o repositório no GitHub abre."
+          },
+          "footer": {
+            "text": "Native · novo ensaio autorizado"
+          },
+          "nativeFlowMessage": {
+            "buttons": [
+              {
+                "name": "cta_url",
+                "buttonParamsJson": "{\"display_text\":\"Abrir Baileys\",\"url\":\"https://github.com/WhiskeySockets/Baileys\",\"merchant_url\":\"https://github.com/WhiskeySockets/Baileys\"}"
+              }
+            ],
+            "messageParamsJson": "{\"from\":\"api\",\"templateId\":\"d6e27cf9-0291-49cd-a6f2-21e0dd52679e\"}"
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N04:DIRECT:native-render-candidates.mjs",
+      "sampleId": "N04",
+      "carrier": "DIRECT",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "listMessage",
+      "message": {
+        "listMessage": {
+          "title": "N04 · Lista de opções",
+          "description": "Abra Escolher opção. Escolha Teste iOS no celular e Teste Web no WhatsApp Web. Confira se a escolha é enviada.",
+          "buttonText": "Escolher opção",
+          "listType": "SINGLE_SELECT",
+          "sections": [
+            {
+              "title": "Opções de teste",
+              "rows": [
+                {
+                  "title": "Teste iOS",
+                  "description": "Selecione no celular",
+                  "rowId": "sample_N04_ios"
+                },
+                {
+                  "title": "Teste Web",
+                  "description": "Selecione no WhatsApp Web",
+                  "rowId": "sample_N04_web"
+                }
+              ]
+            }
+          ],
+          "footerText": "Native · novo ensaio autorizado"
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "list",
+              "attrs": {
+                "type": "product_list",
+                "v": "2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "N47:AKANO_SDK_DIRECT_WITHOUT_BOT_NODE:native-render-carousel-bot-removal-candidates.mjs",
+      "sampleId": "N47",
+      "carrier": "AKANO_SDK_DIRECT_WITHOUT_BOT_NODE",
+      "generatedStructuralFixture": true,
+      "capturedServerEcho": false,
+      "syntheticSecretsAndMedia": true,
+      "nativeContentType": "interactiveMessage",
+      "message": {
+        "interactiveMessage": {
+          "header": {
+            "hasMediaAttachment": false
+          },
+          "body": {
+            "text": "N47 · Carrossel da receita direta do SDK Akano. PRIMEIRO NO iOS: confira os dois cartões, azul e laranja, e toque Escolher cartão 1. Ainda não selecione no Web."
+          },
+          "carouselMessage": {
+            "cards": [
+              {
+                "header": {
+                  "title": "Cartão 1",
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-1.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-1.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N47 · Cartão 1 · azul"
+                },
+                "footer": {
+                  "text": ""
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 1\",\"id\":\"sample_N47_1\"}"
+                    }
+                  ],
+                  "messageParamsJson": "{}"
+                }
+              },
+              {
+                "header": {
+                  "title": "Cartão 2",
+                  "imageMessage": {
+                    "url": "https://example.invalid/fixtures/card-2.enc",
+                    "mimetype": "image/jpeg",
+                    "fileSha256": "AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI=",
+                    "fileLength": 1,
+                    "height": 512,
+                    "width": 512,
+                    "mediaKey": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE=",
+                    "fileEncSha256": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+                    "directPath": "/fixtures/card-2.enc"
+                  },
+                  "hasMediaAttachment": true
+                },
+                "body": {
+                  "text": "N47 · Cartão 2 · laranja"
+                },
+                "footer": {
+                  "text": ""
+                },
+                "nativeFlowMessage": {
+                  "buttons": [
+                    {
+                      "name": "quick_reply",
+                      "buttonParamsJson": "{\"display_text\":\"Escolher cartão 2\",\"id\":\"sample_N47_2\"}"
+                    }
+                  ],
+                  "messageParamsJson": "{}"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "relayNodes": [
+        {
+          "tag": "biz",
+          "attrs": {},
+          "content": [
+            {
+              "tag": "interactive",
+              "attrs": {
+                "type": "native_flow",
+                "v": "1"
+              },
+              "content": [
+                {
+                  "tag": "native_flow",
+                  "attrs": {
+                    "v": "9",
+                    "name": "mixed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

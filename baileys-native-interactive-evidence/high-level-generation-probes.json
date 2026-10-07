@@ -1,0 +1,54 @@
+{
+  "libraryRevision": "0af2386292907f7d9742d8d41f830d8c48208fa1",
+  "liveTransmission": false,
+  "results": [
+    {
+      "kind": "buttons",
+      "generation": "rejected",
+      "failure": {
+        "errorName": "Error",
+        "disconnectCode": 400
+      }
+    },
+    {
+      "kind": "list",
+      "generation": "rejected",
+      "failure": {
+        "errorName": "Error",
+        "disconnectCode": 400
+      }
+    },
+    {
+      "kind": "template",
+      "generation": "rejected",
+      "failure": {
+        "errorName": "Error",
+        "disconnectCode": 400
+      }
+    },
+    {
+      "kind": "interactive",
+      "generation": "rejected",
+      "failure": {
+        "errorName": "Error",
+        "disconnectCode": 400
+      }
+    },
+    {
+      "kind": "carousel",
+      "generation": "rejected",
+      "failure": {
+        "errorName": "Error",
+        "disconnectCode": 400
+      }
+    },
+    {
+      "kind": "liveLocation",
+      "generation": "rejected",
+      "failure": {
+        "errorName": "Error",
+        "disconnectCode": 400
+      }
+    }
+  ]
+}

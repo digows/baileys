@@ -1,0 +1,408 @@
+{
+  "verificationKind": "Offline evidence integrity; no authentication, network, uploads or live transmission",
+  "libraryRevision": "0af2386292907f7d9742d8d41f830d8c48208fa1",
+  "libraryEntryPointSha256": "ae8f926f878243d04ec989c0031a3b1ffdf2810f7ae472b864f7bbca811c774c",
+  "verifiedAtUtc": "2026-10-07T04:24:05.416Z",
+  "nodeVersion": "v26.8.1",
+  "profileRoundTrips": 63,
+  "binaryNodeRoundTrips": 59,
+  "responseRoundTrips": 12,
+  "selectedProfileAssertions": "passed",
+  "allN01ThroughN51Present": true,
+  "exactResponseTargetAssertions": "passed",
+  "transportRecords": 115,
+  "transportEvents": 366,
+  "historicalPreflights": 58,
+  "historicalGenerationRejections": 6,
+  "profileMeasurements": [
+    {
+      "sampleId": "N23",
+      "key": "N23:DOCUMENT_CARRIER:native-render-legacy-wrapper-candidates.mjs",
+      "protobufBytes": 339
+    },
+    {
+      "sampleId": "N25",
+      "key": "N25:DOCUMENT_CARRIER:native-render-media-recipe-candidates.mjs",
+      "protobufBytes": 488
+    },
+    {
+      "sampleId": "N03",
+      "key": "N03:DIRECT:native-render-candidates.mjs",
+      "protobufBytes": 382
+    },
+    {
+      "sampleId": "N04",
+      "key": "N04:DIRECT:native-render-candidates.mjs",
+      "protobufBytes": 327
+    },
+    {
+      "sampleId": "N47",
+      "key": "N47:AKANO_SDK_DIRECT_WITHOUT_BOT_NODE:native-render-carousel-bot-removal-candidates.mjs",
+      "protobufBytes": 830
+    },
+    {
+      "sampleId": "N12",
+      "key": "N12:DIRECT:native-render-bot-control-candidates.mjs",
+      "protobufBytes": 373
+    },
+    {
+      "sampleId": "N01",
+      "key": "N01:DIRECT:native-render-candidates.mjs",
+      "protobufBytes": 380
+    },
+    {
+      "sampleId": "N02",
+      "key": "N02:DIRECT:native-render-candidates.mjs",
+      "protobufBytes": 582
+    },
+    {
+      "sampleId": "N03",
+      "key": "N03:DIRECT:native-render-candidates.mjs",
+      "protobufBytes": 382
+    },
+    {
+      "sampleId": "N04",
+      "key": "N04:DIRECT:native-render-candidates.mjs",
+      "protobufBytes": 327
+    },
+    {
+      "sampleId": "N05",
+      "key": "N05:DIRECT:native-render-candidates.mjs",
+      "protobufBytes": 876
+    },
+    {
+      "sampleId": "N45",
+      "key": "N45:AKANO_PREWRAPPED_DEVICE_METADATA:native-render-carousel-akano-recipe-candidates.mjs",
+      "protobufBytes": 857
+    },
+    {
+      "sampleId": "N46",
+      "key": "N46:AKANO_SDK_DIRECT_WITH_PRIVATE_BOT_NODE:native-render-carousel-akano-sdk-candidates.mjs",
+      "protobufBytes": 830
+    },
+    {
+      "sampleId": "N35",
+      "key": "N35:VIEW_ONCE_V2:native-render-carousel-based-recipe-candidates.mjs",
+      "protobufBytes": 920
+    },
+    {
+      "sampleId": "N36",
+      "key": "N36:VIEW_ONCE_V2:native-render-carousel-based-recipe-candidates.mjs",
+      "protobufBytes": 920
+    },
+    {
+      "sampleId": "N47",
+      "key": "N47:AKANO_SDK_DIRECT_WITHOUT_BOT_NODE:native-render-carousel-bot-removal-candidates.mjs",
+      "protobufBytes": 830
+    },
+    {
+      "sampleId": "N43",
+      "key": "N43:DIRECT_CURRENT_BUILDER:native-render-carousel-current-builder-candidates.mjs",
+      "protobufBytes": 833
+    },
+    {
+      "sampleId": "N44",
+      "key": "N44:DIRECT_CURRENT_BUILDER:native-render-carousel-current-builder-candidates.mjs",
+      "protobufBytes": 833
+    },
+    {
+      "sampleId": "N49",
+      "key": "N49:DIRECT_DECLARED_LAYOUT_FLOW_UNDECLARED:native-render-carousel-declared-layout-candidates.mjs",
+      "protobufBytes": 825
+    },
+    {
+      "sampleId": "N50",
+      "key": "N50:DIRECT_DECLARED_LAYOUT_FLOW_VERSION_1:native-render-carousel-declared-layout-candidates.mjs",
+      "protobufBytes": 829
+    },
+    {
+      "sampleId": "N41",
+      "key": "N41:VIEW_ONCE_WITH_NESTED_METADATA:native-render-carousel-engagement-candidates.mjs",
+      "protobufBytes": 981
+    },
+    {
+      "sampleId": "N42",
+      "key": "N42:VIEW_ONCE_WITH_NESTED_METADATA:native-render-carousel-engagement-candidates.mjs",
+      "protobufBytes": 981
+    },
+    {
+      "sampleId": "N29",
+      "key": "N29:DIRECT:native-render-carousel-envelope-candidates.mjs",
+      "protobufBytes": 967
+    },
+    {
+      "sampleId": "N30",
+      "key": "N30:DIRECT:native-render-carousel-envelope-candidates.mjs",
+      "protobufBytes": 967
+    },
+    {
+      "sampleId": "N48",
+      "key": "N48:DIRECT_CAROUSEL_WITH_CARD_FLOW_VERSION_3:native-render-carousel-flow-v3-candidates.mjs",
+      "protobufBytes": 834
+    },
+    {
+      "sampleId": "N39",
+      "key": "N39:VIEW_ONCE_WITH_NESTED_METADATA:native-render-carousel-nested-recipe-candidates.mjs",
+      "protobufBytes": 985
+    },
+    {
+      "sampleId": "N40",
+      "key": "N40:VIEW_ONCE_WITH_NESTED_METADATA:native-render-carousel-nested-recipe-candidates.mjs",
+      "protobufBytes": 985
+    },
+    {
+      "sampleId": "N37",
+      "key": "N37:VIEW_ONCE_V2:native-render-carousel-node-candidates.mjs",
+      "protobufBytes": 933
+    },
+    {
+      "sampleId": "N38",
+      "key": "N38:VIEW_ONCE_V2:native-render-carousel-node-candidates.mjs",
+      "protobufBytes": 933
+    },
+    {
+      "sampleId": "N31",
+      "key": "N31:TEMPLATE:native-render-carousel-template-candidates.mjs",
+      "protobufBytes": 977
+    },
+    {
+      "sampleId": "N32",
+      "key": "N32:TEMPLATE:native-render-carousel-template-candidates.mjs",
+      "protobufBytes": 977
+    },
+    {
+      "sampleId": "N33",
+      "key": "N33:DIRECT:native-render-carousel-type-candidates.mjs",
+      "protobufBytes": 970
+    },
+    {
+      "sampleId": "N34",
+      "key": "N34:DIRECT:native-render-carousel-type-candidates.mjs",
+      "protobufBytes": 970
+    },
+    {
+      "sampleId": "N17",
+      "key": "N17:DIRECT:native-render-encoding-controls-candidates.mjs",
+      "protobufBytes": 379
+    },
+    {
+      "sampleId": "N18",
+      "key": "N18:VIEW_ONCE_CARRIER:native-render-encoding-controls-candidates.mjs",
+      "protobufBytes": 386
+    },
+    {
+      "sampleId": "N19",
+      "key": "N19:DIRECT:native-render-encoding-controls-candidates.mjs",
+      "protobufBytes": 298
+    },
+    {
+      "sampleId": "N15",
+      "key": "N15:DIRECT:native-render-flow-controls-candidates.mjs",
+      "protobufBytes": 342
+    },
+    {
+      "sampleId": "N16",
+      "key": "N16:DIRECT:native-render-flow-controls-candidates.mjs",
+      "protobufBytes": 412
+    },
+    {
+      "sampleId": "N21",
+      "key": "N21:DIRECT:native-render-fork-recipe-candidates.mjs",
+      "protobufBytes": 393
+    },
+    {
+      "sampleId": "N22",
+      "key": "N22:DIRECT:native-render-fork-recipe-candidates.mjs",
+      "protobufBytes": 315
+    },
+    {
+      "sampleId": "N06",
+      "key": "N06:DIRECT:native-render-ios-first-candidates.mjs",
+      "protobufBytes": 381
+    },
+    {
+      "sampleId": "N07",
+      "key": "N07:DIRECT:native-render-ios-first-candidates.mjs",
+      "protobufBytes": 578
+    },
+    {
+      "sampleId": "N08",
+      "key": "N08:DIRECT:native-render-ios-first-candidates.mjs",
+      "protobufBytes": 817
+    },
+    {
+      "sampleId": "N23",
+      "key": "N23:DOCUMENT_CARRIER:native-render-legacy-wrapper-candidates.mjs",
+      "protobufBytes": 339
+    },
+    {
+      "sampleId": "N24",
+      "key": "N24:DOCUMENT_CARRIER:native-render-legacy-wrapper-candidates.mjs",
+      "protobufBytes": 339
+    },
+    {
+      "sampleId": "N25",
+      "key": "N25:DOCUMENT_CARRIER:native-render-media-recipe-candidates.mjs",
+      "protobufBytes": 488
+    },
+    {
+      "sampleId": "N26",
+      "key": "N26:DOCUMENT_CARRIER:native-render-media-recipe-candidates.mjs",
+      "protobufBytes": 488
+    },
+    {
+      "sampleId": "N27",
+      "key": "N27:DIRECT:native-render-media-recipe-candidates.mjs",
+      "protobufBytes": 959
+    },
+    {
+      "sampleId": "N28",
+      "key": "N28:DIRECT:native-render-media-recipe-candidates.mjs",
+      "protobufBytes": 959
+    },
+    {
+      "sampleId": "N20",
+      "key": "N20:VIEW_ONCE_CARRIER:native-render-mobile-shape-candidate.mjs",
+      "protobufBytes": 397
+    },
+    {
+      "sampleId": "N51",
+      "key": "N51:DIRECT_PLAIN_FLOW_VERSION_3:native-render-plain-flow-v3-candidates.mjs",
+      "protobufBytes": 251
+    },
+    {
+      "sampleId": "N09",
+      "key": "N09:DIRECT:native-render-recipient-candidates.mjs",
+      "protobufBytes": 381
+    },
+    {
+      "sampleId": "N10",
+      "key": "N10:DIRECT:native-render-recipient-candidates.mjs",
+      "protobufBytes": 578
+    },
+    {
+      "sampleId": "N11",
+      "key": "N11:DIRECT:native-render-recipient-candidates.mjs",
+      "protobufBytes": 817
+    },
+    {
+      "sampleId": "N13",
+      "key": "N13:DIRECT:native-render-secret-controls-candidates.mjs",
+      "protobufBytes": 410
+    },
+    {
+      "sampleId": "N14",
+      "key": "N14:DIRECT:native-render-secret-controls-candidates.mjs",
+      "protobufBytes": 410
+    },
+    {
+      "sampleId": "I01",
+      "key": "I01:INITIAL:DOCUMENT",
+      "protobufBytes": 382
+    },
+    {
+      "sampleId": "I02",
+      "key": "I02:INITIAL:DOCUMENT",
+      "protobufBytes": 371
+    },
+    {
+      "sampleId": "I03",
+      "key": "I03:INITIAL:DOCUMENT",
+      "protobufBytes": 560
+    },
+    {
+      "sampleId": "I01M",
+      "key": "I01M:INITIAL:DOCUMENT_WITH_DEVICE_METADATA",
+      "protobufBytes": 371
+    },
+    {
+      "sampleId": "I01V",
+      "key": "I01V:INITIAL:VIEW_ONCE_CARRIER",
+      "protobufBytes": 335
+    },
+    {
+      "sampleId": "I05",
+      "key": "I05:INITIAL:DOCUMENT",
+      "protobufBytes": 332
+    },
+    {
+      "sampleId": "I04",
+      "key": "I04:INITIAL:DOCUMENT",
+      "protobufBytes": 762
+    }
+  ],
+  "responseMeasurements": [
+    {
+      "replyMessageId": "3EB00CCEB74541287D3B40",
+      "targetSampleId": "N30",
+      "wireType": "templateButtonReplyMessage",
+      "protobufBytes": 67
+    },
+    {
+      "replyMessageId": "3EB023F6F0C2281CA732FB",
+      "targetSampleId": "N40",
+      "wireType": "templateButtonReplyMessage",
+      "protobufBytes": 67
+    },
+    {
+      "replyMessageId": "3A8D4647A16A5720439F",
+      "targetSampleId": "N04",
+      "wireType": "listResponseMessage",
+      "protobufBytes": 58
+    },
+    {
+      "replyMessageId": "3EB037BF85E2FCB0A989C6",
+      "targetSampleId": "N04",
+      "wireType": "listResponseMessage",
+      "protobufBytes": 58
+    },
+    {
+      "replyMessageId": "3EB0102117B6747D8B9F77",
+      "targetSampleId": "N02",
+      "wireType": "templateButtonReplyMessage",
+      "protobufBytes": 58
+    },
+    {
+      "replyMessageId": "3EB02029B9831DD4042562",
+      "targetSampleId": "N01",
+      "wireType": "templateButtonReplyMessage",
+      "protobufBytes": 58
+    },
+    {
+      "replyMessageId": "3EB0FA3425651ADA28365D",
+      "targetSampleId": "N05",
+      "wireType": "templateButtonReplyMessage",
+      "protobufBytes": 67
+    },
+    {
+      "replyMessageId": "3A25BBF20487CDD8F0FB",
+      "targetSampleId": "N22",
+      "wireType": "buttonsResponseMessage",
+      "protobufBytes": 58
+    },
+    {
+      "replyMessageId": "3EB0B173E57F3879D91E5B",
+      "targetSampleId": "N24",
+      "wireType": "buttonsResponseMessage",
+      "protobufBytes": 58
+    },
+    {
+      "replyMessageId": "3A474DB3B3F12FF49E90",
+      "targetSampleId": "N23",
+      "wireType": "buttonsResponseMessage",
+      "protobufBytes": 58
+    },
+    {
+      "replyMessageId": "3AD50F5FCFF4552A8AF8",
+      "targetSampleId": "N26",
+      "wireType": "buttonsResponseMessage",
+      "protobufBytes": 58
+    },
+    {
+      "replyMessageId": "3A5A7775F2045130718D",
+      "targetSampleId": "N25",
+      "wireType": "buttonsResponseMessage",
+      "protobufBytes": 58
+    }
+  ]
+}

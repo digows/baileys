@@ -229,6 +229,86 @@ export type WASendableProduct = Omit<proto.Message.ProductMessage.IProductSnapsh
 	productImage: WAMediaUpload
 }
 
+export interface ReplyButtonOption {
+	id: string
+	displayText: string
+}
+
+export interface ReplyButtonsMessageOptions {
+	text: string
+	footer?: string
+	buttons: ReplyButtonOption[]
+	/** Optional image reply card, using the existing media upload/cache path. */
+	image?: WAMediaUpload
+}
+
+export interface UrlButtonMessageOptions {
+	text: string
+	footer?: string
+	displayText: string
+	url: string
+	/** Defaults to url. */
+	merchantUrl?: string
+}
+
+export interface SingleSelectListRow {
+	rowId: string
+	title: string
+	description?: string
+}
+
+export interface SingleSelectListSection {
+	title?: string
+	rows: SingleSelectListRow[]
+}
+
+export interface SingleSelectListMessageOptions {
+	title: string
+	description: string
+	buttonText: string
+	footer?: string
+	sections: SingleSelectListSection[]
+}
+
+export interface ImageCarouselCard {
+	image: WAMediaUpload
+	title: string
+	text: string
+	buttons: ReplyButtonOption[]
+}
+
+/**
+ * Selected N47 profile: Web interaction was reported; iOS displayed text/images
+ * with reply selection disabled. Horizontal navigation on iOS is unconfirmed.
+ * No callback was captured for N47 itself; see the attached compatibility evidence.
+ */
+export interface ImageCarouselMessageOptions {
+	text: string
+	cards: ImageCarouselCard[]
+}
+
+export interface ReplyButtonsMessageContent {
+	replyButtons: ReplyButtonsMessageOptions
+}
+
+export interface UrlButtonMessageContent {
+	urlButton: UrlButtonMessageOptions
+}
+
+export interface SingleSelectListMessageContent {
+	list: SingleSelectListMessageOptions
+}
+
+export interface ImageCarouselMessageContent {
+	carousel: ImageCarouselMessageOptions
+}
+
+export type InteractiveMessageContent =
+	| ReplyButtonsMessageContent
+	| UrlButtonMessageContent
+	| SingleSelectListMessageContent
+	| ImageCarouselMessageContent
+
 export type AnyRegularMessageContent = (
 	| ({
 			text: string
@@ -288,6 +368,7 @@ export type AnyRegularMessageContent = (
 
 export type AnyMessageContent =
 	| AnyRegularMessageContent
+	| InteractiveMessageContent
 	| {
 			forward: WAMessage
 			force?: boolean

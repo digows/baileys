@@ -1,0 +1,512 @@
+{
+  "libraryRevision": "0af2386292907f7d9742d8d41f830d8c48208fa1",
+  "testDatesUtc": [
+    "2026-10-06",
+    "2026-10-07"
+  ],
+  "renderingEvidence": "Human observations; account and client build numbers were not recorded",
+  "normalization": "Application labels and option-ID prefixes renamed consistently; transport IDs retained. Secrets, recipient hashes and media metadata in structural fixtures are synthetic replacements. Fixtures are not captured server echoes.",
+  "externalApplicationDependencies": false,
+  "measurements": [
+    {
+      "id": "I01",
+      "carrier": "DOCUMENT",
+      "protobufBytes": 382,
+      "protobufRoundTripMatched": true,
+      "media": "None"
+    },
+    {
+      "id": "I02",
+      "carrier": "DOCUMENT",
+      "protobufBytes": 371,
+      "protobufRoundTripMatched": true,
+      "media": "None"
+    },
+    {
+      "id": "I03",
+      "carrier": "DOCUMENT",
+      "protobufBytes": 560,
+      "protobufRoundTripMatched": true,
+      "media": "None"
+    },
+    {
+      "id": "I01M",
+      "carrier": "DOCUMENT_WITH_DEVICE_METADATA",
+      "protobufBytes": 371,
+      "protobufRoundTripMatched": true,
+      "media": "None"
+    },
+    {
+      "id": "I01V",
+      "carrier": "VIEW_ONCE_CARRIER",
+      "protobufBytes": 335,
+      "protobufRoundTripMatched": true,
+      "media": "None"
+    },
+    {
+      "id": "I05",
+      "carrier": "DOCUMENT",
+      "protobufBytes": 332,
+      "protobufRoundTripMatched": true,
+      "media": "None"
+    },
+    {
+      "id": "I04",
+      "carrier": "DOCUMENT",
+      "protobufBytes": 401,
+      "protobufRoundTripMatched": true,
+      "media": "Offline structural placeholders; live encrypted media required before relay"
+    },
+    {
+      "id": "N12",
+      "carrier": "DIRECT",
+      "protobufBytes": 373,
+      "protobufRoundTripMatched": true,
+      "media": "None"
+    },
+    {
+      "id": "N45",
+      "carrier": "AKANO_PREWRAPPED_DEVICE_METADATA",
+      "protobufBytes": 499,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 0,
+      "binaryNodeRoundTripMatched": null,
+      "media": "Offline structural placeholders; live encrypted JPEG metadata required before relay",
+      "explicitRelayNodes": 0
+    },
+    {
+      "id": "N46",
+      "carrier": "AKANO_SDK_DIRECT_WITH_PRIVATE_BOT_NODE",
+      "protobufBytes": 472,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 72,
+      "binaryNodeRoundTripMatched": true,
+      "media": "Offline structural placeholders; live encrypted JPEG metadata required before relay",
+      "explicitRelayNodes": 2
+    },
+    {
+      "id": "N35",
+      "carrier": "VIEW_ONCE_V2",
+      "protobufBytes": 562,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 54,
+      "binaryNodeRoundTripMatched": true,
+      "media": "Offline structural placeholders; live encrypted JPEG metadata required before relay",
+      "explicitRelayNodes": 1
+    },
+    {
+      "id": "N36",
+      "carrier": "VIEW_ONCE_V2",
+      "protobufBytes": 562,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 54,
+      "binaryNodeRoundTripMatched": true,
+      "media": "Offline structural placeholders; live encrypted JPEG metadata required before relay",
+      "explicitRelayNodes": 1
+    },
+    {
+      "id": "N47",
+      "carrier": "AKANO_SDK_DIRECT_WITHOUT_BOT_NODE",
+      "protobufBytes": 472,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 54,
+      "binaryNodeRoundTripMatched": true,
+      "media": "Offline structural placeholders; live encrypted JPEG metadata required before relay",
+      "explicitRelayNodes": 1
+    },
+    {
+      "id": "N43",
+      "carrier": "DIRECT_CURRENT_BUILDER",
+      "protobufBytes": 475,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 54,
+      "binaryNodeRoundTripMatched": true,
+      "media": "Offline structural placeholders; live encrypted JPEG metadata required before relay",
+      "explicitRelayNodes": 1
+    },
+    {
+      "id": "N44",
+      "carrier": "DIRECT_CURRENT_BUILDER",
+      "protobufBytes": 475,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 54,
+      "binaryNodeRoundTripMatched": true,
+      "media": "Offline structural placeholders; live encrypted JPEG metadata required before relay",
+      "explicitRelayNodes": 1
+    },
+    {
+      "id": "N49",
+      "carrier": "DIRECT_DECLARED_LAYOUT_FLOW_UNDECLARED",
+      "protobufBytes": 467,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 54,
+      "binaryNodeRoundTripMatched": true,
+      "media": "Offline structural placeholders; live encrypted JPEG metadata required before relay",
+      "explicitRelayNodes": 1
+    },
+    {
+      "id": "N50",
+      "carrier": "DIRECT_DECLARED_LAYOUT_FLOW_VERSION_1",
+      "protobufBytes": 471,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 54,
+      "binaryNodeRoundTripMatched": true,
+      "media": "Offline structural placeholders; live encrypted JPEG metadata required before relay",
+      "explicitRelayNodes": 1
+    },
+    {
+      "id": "N41",
+      "carrier": "VIEW_ONCE_WITH_NESTED_METADATA",
+      "protobufBytes": 623,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 140,
+      "binaryNodeRoundTripMatched": true,
+      "media": "Offline structural placeholders; live encrypted JPEG metadata required before relay",
+      "explicitRelayNodes": 1
+    },
+    {
+      "id": "N42",
+      "carrier": "VIEW_ONCE_WITH_NESTED_METADATA",
+      "protobufBytes": 623,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 140,
+      "binaryNodeRoundTripMatched": true,
+      "media": "Offline structural placeholders; live encrypted JPEG metadata required before relay",
+      "explicitRelayNodes": 1
+    },
+    {
+      "id": "N29",
+      "carrier": "DIRECT",
+      "protobufBytes": 609,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 195,
+      "binaryNodeRoundTripMatched": true,
+      "media": "Offline structural placeholders; live encrypted JPEG metadata required before relay",
+      "explicitRelayNodes": 1
+    },
+    {
+      "id": "N30",
+      "carrier": "DIRECT",
+      "protobufBytes": 609,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 195,
+      "binaryNodeRoundTripMatched": true,
+      "media": "Offline structural placeholders; live encrypted JPEG metadata required before relay",
+      "explicitRelayNodes": 1
+    },
+    {
+      "id": "N48",
+      "carrier": "DIRECT_CAROUSEL_WITH_CARD_FLOW_VERSION_3",
+      "protobufBytes": 476,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 54,
+      "binaryNodeRoundTripMatched": true,
+      "media": "Offline structural placeholders; live encrypted JPEG metadata required before relay",
+      "explicitRelayNodes": 1
+    },
+    {
+      "id": "N39",
+      "carrier": "VIEW_ONCE_WITH_NESTED_METADATA",
+      "protobufBytes": 627,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 0,
+      "binaryNodeRoundTripMatched": null,
+      "media": "Offline structural placeholders; live encrypted JPEG metadata required before relay",
+      "explicitRelayNodes": 0
+    },
+    {
+      "id": "N40",
+      "carrier": "VIEW_ONCE_WITH_NESTED_METADATA",
+      "protobufBytes": 627,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 0,
+      "binaryNodeRoundTripMatched": null,
+      "media": "Offline structural placeholders; live encrypted JPEG metadata required before relay",
+      "explicitRelayNodes": 0
+    },
+    {
+      "id": "N37",
+      "carrier": "VIEW_ONCE_V2",
+      "protobufBytes": 575,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 39,
+      "binaryNodeRoundTripMatched": true,
+      "media": "Offline structural placeholders; live encrypted JPEG metadata required before relay",
+      "explicitRelayNodes": 1
+    },
+    {
+      "id": "N38",
+      "carrier": "VIEW_ONCE_V2",
+      "protobufBytes": 575,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 39,
+      "binaryNodeRoundTripMatched": true,
+      "media": "Offline structural placeholders; live encrypted JPEG metadata required before relay",
+      "explicitRelayNodes": 1
+    },
+    {
+      "id": "N31",
+      "carrier": "TEMPLATE",
+      "protobufBytes": 619,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 195,
+      "binaryNodeRoundTripMatched": true,
+      "media": "Offline structural placeholders; live encrypted JPEG metadata required before relay",
+      "explicitRelayNodes": 1
+    },
+    {
+      "id": "N32",
+      "carrier": "TEMPLATE",
+      "protobufBytes": 619,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 195,
+      "binaryNodeRoundTripMatched": true,
+      "media": "Offline structural placeholders; live encrypted JPEG metadata required before relay",
+      "explicitRelayNodes": 1
+    },
+    {
+      "id": "N33",
+      "carrier": "DIRECT",
+      "protobufBytes": 612,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 195,
+      "binaryNodeRoundTripMatched": true,
+      "media": "Offline structural placeholders; live encrypted JPEG metadata required before relay",
+      "explicitRelayNodes": 1
+    },
+    {
+      "id": "N34",
+      "carrier": "DIRECT",
+      "protobufBytes": 612,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 195,
+      "binaryNodeRoundTripMatched": true,
+      "media": "Offline structural placeholders; live encrypted JPEG metadata required before relay",
+      "explicitRelayNodes": 1
+    },
+    {
+      "id": "N17",
+      "carrier": "DIRECT",
+      "protobufBytes": 379,
+      "protobufRoundTripMatched": true,
+      "media": "None"
+    },
+    {
+      "id": "N18",
+      "carrier": "VIEW_ONCE_CARRIER",
+      "protobufBytes": 386,
+      "protobufRoundTripMatched": true,
+      "media": "None"
+    },
+    {
+      "id": "N19",
+      "carrier": "DIRECT",
+      "protobufBytes": 298,
+      "protobufRoundTripMatched": true,
+      "media": "None"
+    },
+    {
+      "id": "N15",
+      "carrier": "DIRECT",
+      "protobufBytes": 342,
+      "protobufRoundTripMatched": true,
+      "media": "None"
+    },
+    {
+      "id": "N16",
+      "carrier": "DIRECT",
+      "protobufBytes": 412,
+      "protobufRoundTripMatched": true,
+      "media": "None"
+    },
+    {
+      "id": "N21",
+      "carrier": "DIRECT",
+      "protobufBytes": 393,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 195,
+      "binaryNodeRoundTripMatched": true,
+      "media": "None",
+      "explicitRelayNodes": 1
+    },
+    {
+      "id": "N22",
+      "carrier": "DIRECT",
+      "protobufBytes": 315,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 195,
+      "binaryNodeRoundTripMatched": true,
+      "media": "None",
+      "explicitRelayNodes": 1
+    },
+    {
+      "id": "N06",
+      "carrier": "DIRECT",
+      "protobufBytes": 381,
+      "protobufRoundTripMatched": true,
+      "media": "None"
+    },
+    {
+      "id": "N07",
+      "carrier": "DIRECT",
+      "protobufBytes": 399,
+      "protobufRoundTripMatched": true,
+      "media": "Offline structural placeholders; live encrypted media required before relay"
+    },
+    {
+      "id": "N08",
+      "carrier": "DIRECT",
+      "protobufBytes": 459,
+      "protobufRoundTripMatched": true,
+      "media": "Offline structural placeholders; live encrypted media required before relay"
+    },
+    {
+      "id": "N23",
+      "carrier": "DOCUMENT_CARRIER",
+      "protobufBytes": 339,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 195,
+      "binaryNodeRoundTripMatched": true,
+      "media": "None",
+      "explicitRelayNodes": 1
+    },
+    {
+      "id": "N24",
+      "carrier": "DOCUMENT_CARRIER",
+      "protobufBytes": 339,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 195,
+      "binaryNodeRoundTripMatched": true,
+      "media": "None",
+      "explicitRelayNodes": 1
+    },
+    {
+      "id": "N25",
+      "carrier": "DOCUMENT_CARRIER",
+      "protobufBytes": 310,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 195,
+      "binaryNodeRoundTripMatched": true,
+      "media": "Offline structural placeholders; live encrypted JPEG metadata required before relay",
+      "explicitRelayNodes": 1
+    },
+    {
+      "id": "N26",
+      "carrier": "DOCUMENT_CARRIER",
+      "protobufBytes": 310,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 195,
+      "binaryNodeRoundTripMatched": true,
+      "media": "Offline structural placeholders; live encrypted JPEG metadata required before relay",
+      "explicitRelayNodes": 1
+    },
+    {
+      "id": "N27",
+      "carrier": "DIRECT",
+      "protobufBytes": 601,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 0,
+      "binaryNodeRoundTripMatched": null,
+      "media": "Offline structural placeholders; live encrypted JPEG metadata required before relay",
+      "explicitRelayNodes": 0
+    },
+    {
+      "id": "N28",
+      "carrier": "DIRECT",
+      "protobufBytes": 601,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 0,
+      "binaryNodeRoundTripMatched": null,
+      "media": "Offline structural placeholders; live encrypted JPEG metadata required before relay",
+      "explicitRelayNodes": 0
+    },
+    {
+      "id": "N20",
+      "carrier": "VIEW_ONCE_CARRIER",
+      "protobufBytes": 397,
+      "protobufRoundTripMatched": true,
+      "media": "None",
+      "explicitRelayNodes": 0
+    },
+    {
+      "id": "N51",
+      "carrier": "DIRECT_PLAIN_FLOW_VERSION_3",
+      "protobufBytes": 251,
+      "protobufRoundTripMatched": true,
+      "binaryNodeBytes": 54,
+      "binaryNodeRoundTripMatched": true,
+      "media": "None",
+      "explicitRelayNodes": 1
+    },
+    {
+      "id": "N01",
+      "carrier": "DIRECT",
+      "protobufBytes": 380,
+      "protobufRoundTripMatched": true,
+      "media": "None"
+    },
+    {
+      "id": "N02",
+      "carrier": "DIRECT",
+      "protobufBytes": 403,
+      "protobufRoundTripMatched": true,
+      "media": "Offline structural placeholders; live encrypted media required before relay"
+    },
+    {
+      "id": "N03",
+      "carrier": "DIRECT",
+      "protobufBytes": 382,
+      "protobufRoundTripMatched": true,
+      "media": "None"
+    },
+    {
+      "id": "N04",
+      "carrier": "DIRECT",
+      "protobufBytes": 327,
+      "protobufRoundTripMatched": true,
+      "media": "None"
+    },
+    {
+      "id": "N05",
+      "carrier": "DIRECT",
+      "protobufBytes": 518,
+      "protobufRoundTripMatched": true,
+      "media": "Offline structural placeholders; live encrypted media required before relay"
+    },
+    {
+      "id": "N09",
+      "carrier": "DIRECT",
+      "protobufBytes": 381,
+      "protobufRoundTripMatched": true,
+      "media": "None"
+    },
+    {
+      "id": "N10",
+      "carrier": "DIRECT",
+      "protobufBytes": 399,
+      "protobufRoundTripMatched": true,
+      "media": "Offline structural placeholders; live encrypted media required before relay"
+    },
+    {
+      "id": "N11",
+      "carrier": "DIRECT",
+      "protobufBytes": 459,
+      "protobufRoundTripMatched": true,
+      "media": "Offline structural placeholders; live encrypted media required before relay"
+    },
+    {
+      "id": "N13",
+      "carrier": "DIRECT",
+      "protobufBytes": 410,
+      "protobufRoundTripMatched": true,
+      "media": "None"
+    },
+    {
+      "id": "N14",
+      "carrier": "DIRECT",
+      "protobufBytes": 410,
+      "protobufRoundTripMatched": true,
+      "media": "None"
+    }
+  ]
+}

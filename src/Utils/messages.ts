@@ -30,6 +30,7 @@ import { WAMessageStatus, WAProto } from '../Types'
 import { isJidGroup, isJidNewsletter, isJidStatusBroadcast, jidNormalizedUser } from '../WABinary'
 import { sha256 } from './crypto'
 import { generateMessageIDV2, getKeyAuthor, unixTimestampSeconds } from './generics'
+import { generateInteractiveMessageContent, isInteractiveMessageContent } from './interactive-messages'
 import type { ILogger } from './logger'
 import {
 	downloadContentFromMessage,
@@ -396,6 +397,12 @@ export const generateWAMessageContent = async (
 	message: AnyMessageContent,
 	options: MessageContentGenerationOptions
 ) => {
+	if (isInteractiveMessageContent(message)) {
+		// N03/N04/N47 omit root reporting metadata; N23/N25 supply their own.
+		// Keep ordinary message postprocessing unchanged below.
+		return generateInteractiveMessageContent(message, options, prepareWAMessageMedia)
+	}
+
 	let m: WAMessageContent = {}
 	if (hasNonNullishProperty(message, 'text')) {
 		const extContent = { text: message.text } as WATextMessage
@@ -764,6 +771,11 @@ export const generateWAMessageFromContent = (
 }
 
 export const generateWAMessage = async (jid: string, content: AnyMessageContent, options: MessageGenerationOptions) => {
+	if ('carousel' in content && (options.quoted || options.ephemeralExpiration)) {
+		// N47 omits root contextInfo; these options would add it in the final generator.
+		throw new Boom('The selected carousel profile does not support quotes or ephemeral expiration', { statusCode: 400 })
+	}
+
 	// ensure msg ID is with every log
 	options.logger = options?.logger?.child({ msgId: options.messageId })
 	// Pass jid in the options to generateWAMessageContent

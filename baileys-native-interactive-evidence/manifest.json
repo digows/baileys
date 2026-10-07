@@ -1,0 +1,57 @@
+{
+  "libraryRevision": "0af2386292907f7d9742d8d41f830d8c48208fa1",
+  "hashAlgorithm": "SHA-256",
+  "manifestSelfHashExcluded": true,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6822,
+      "sha256": "509d68dbbd661d8b9afa2c30c3361320af09b766b7b0ea949bd0d680da7bfbe0"
+    },
+    {
+      "path": "compatibility-matrix.md",
+      "bytes": 9188,
+      "sha256": "e8970739e73d781e96c2c7063fd6f4cefe764dad985daef0dcb0931db054ff3e"
+    },
+    {
+      "path": "evidence-verification.json",
+      "bytes": 11509,
+      "sha256": "df65bfffd82d3a5953c6e4a2287f81a1229db60787125980256591ce46d04724"
+    },
+    {
+      "path": "exploratory-profiles.json",
+      "bytes": 181541,
+      "sha256": "57d1ee050cf52bdbcf38f5d6de447053af5d527a3a814086182c51a79b5ada81"
+    },
+    {
+      "path": "high-level-generation-probes.json",
+      "bytes": 1066,
+      "sha256": "b47209da067956edcd6845a1ed922a3558a4972429adb3a00e0aea6892d2fbbe"
+    },
+    {
+      "path": "native-response-fixtures.json",
+      "bytes": 5845,
+      "sha256": "b42664e9d49a2da8a2e937c2edece9d491f264a5ea419f47ffe271430a3d54f6"
+    },
+    {
+      "path": "offline-preflights.json",
+      "bytes": 15402,
+      "sha256": "78bbdf9506aaae0314862d2a8c539692eda1c9792ccdfd020e43697cd86dfeed"
+    },
+    {
+      "path": "selected-profiles.json",
+      "bytes": 13344,
+      "sha256": "eab2e25e75d77511963dc32a8fae42bb72212e8e8d03cf7a847277a606f714b8"
+    },
+    {
+      "path": "transport-results.json",
+      "bytes": 105510,
+      "sha256": "94f498155e8453ff789b1419aec98daeaa5d1fdc2934a56270b985e7f78fb080"
+    },
+    {
+      "path": "verify-evidence.mjs",
+      "bytes": 8206,
+      "sha256": "c3e65238c9d177482b242eaf857808e2488e16af2e51c96dcf0665c0d2b44181"
+    }
+  ]
+}
