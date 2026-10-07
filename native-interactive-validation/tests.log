@@ -1,0 +1,49 @@
+(node:4178) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:4178) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+PASS src/__tests__/Utils/tc-token.test.ts (8.165 s)
+PASS src/__tests__/Utils/messages-media.test.ts
+PASS src/__tests__/Utils/process-sync-action.test.ts
+PASS src/__tests__/Utils/history.test.ts
+PASS src/__tests__/Utils/offline-node-processor.test.ts
+PASS src/__tests__/Utils/noise-handler.test.ts
+PASS src/__tests__/Utils/stanza-ack.test.ts
+PASS src/__tests__/Socket/identity-change-handling.test.ts
+PASS src/__tests__/bigint-validation.test.ts
+PASS src/__tests__/Utils/chat-utils-resilience.test.ts
+PASS src/__tests__/Utils/sync-action-utils.test.ts
+PASS src/__tests__/Utils/reporting-utils.test.ts
+PASS src/__tests__/Utils/process-message.test.ts
+PASS src/__tests__/Utils/event-buffer.test.ts
+PASS src/__tests__/Utils/app-state-sync-resilience.test.ts
+PASS src/__tests__/Utils/lt-hash-generator.test.ts
+{"level":30,"time":"2026-10-07T04:43:02.947Z","pid":4178,"hostname":"Rodrigos-MacBook-Office.local","class":"baileys","msg":"Connection is now AwaitingInitialSync, buffering events"}
+{"level":30,"time":"2026-10-07T04:43:02.947Z","pid":4178,"hostname":"Rodrigos-MacBook-Office.local","class":"baileys","msg":"Reconnection with existing sync data, skipping history sync wait. Transitioning to Online."}
+{"level":30,"time":"2026-10-07T04:43:03.015Z","pid":4178,"hostname":"Rodrigos-MacBook-Office.local","class":"baileys","trace":"Error: Test completed\n    at Object.<anonymous> (/Volumes/Files/Development/workspaces/OSS/baileys/src/__tests__/binary/reconnection-sync-skip.test.ts:48:18)","msg":"connection errored"}
+{"level":30,"time":"2026-10-07T04:43:03.087Z","pid":4178,"hostname":"Rodrigos-MacBook-Office.local","class":"baileys","msg":"Connection is now AwaitingInitialSync, buffering events"}
+{"level":30,"time":"2026-10-07T04:43:03.087Z","pid":4178,"hostname":"Rodrigos-MacBook-Office.local","class":"baileys","msg":"First connection, awaiting history sync notification with a 20s timeout."}
+PASS src/__tests__/binary/reconnection-sync-skip.test.ts
+{"level":30,"time":"2026-10-07T04:43:03.139Z","pid":4178,"hostname":"Rodrigos-MacBook-Office.local","class":"baileys","trace":"Error: Test completed\n    at Object.<anonymous> (/Volumes/Files/Development/workspaces/OSS/baileys/src/__tests__/binary/reconnection-sync-skip.test.ts:83:18)","msg":"connection errored"}
+PASS src/__tests__/proto-tojson-long.test.ts
+PASS src/__tests__/Utils/decode-wa-message.test.ts
+PASS src/__tests__/Socket/groups.test.ts
+PASS src/__tests__/Utils/generics.test.ts
+PASS src/__tests__/Utils/signal.test.ts
+PASS src/__tests__/Utils/app-state-version.test.ts
+PASS src/__tests__/binary/connection-deadlock.test.ts
+{"level":40,"time":"2026-10-07T04:43:05.022Z","pid":4178,"hostname":"Rodrigos-MacBook-Office.local","class":"baileys","msg":"⚠️ DANGER: DISABLING ALL SYNC BY shouldSyncHistoryMsg PREVENTS BAILEYS FROM ACCESSING INITIAL LID MAPPINGS, LEADING TO INSTABILIY AND SESSION ERRORS"}
+{"level":30,"time":"2026-10-07T04:43:05.026Z","pid":4178,"hostname":"Rodrigos-MacBook-Office.local","class":"baileys","msg":"Connection is now AwaitingInitialSync, buffering events"}
+{"level":30,"time":"2026-10-07T04:43:05.026Z","pid":4178,"hostname":"Rodrigos-MacBook-Office.local","class":"baileys","msg":"History sync is disabled by config, not waiting for notification. Transitioning to Online."}
+{"level":30,"time":"2026-10-07T04:43:05.082Z","pid":4178,"hostname":"Rodrigos-MacBook-Office.local","class":"baileys","trace":"Error: Test completed\n    at Object.<anonymous> (/Volumes/Files/Development/workspaces/OSS/baileys/src/__tests__/binary/connection-deadlock.test.ts:51:18)","msg":"connection errored"}
+PASS src/__tests__/Signal/lid-mapping.test.ts
+PASS src/__tests__/Utils/auth-utils.test.ts
+PASS src/__tests__/Signal/Group/sender-key-state-regression.test.ts
+PASS src/__tests__/Socket/chats.test.ts
+PASS src/__tests__/Socket/interactive-messages.test.ts
+PASS src/__tests__/Utils/interactive-messages.test.ts
+
+Test Suites: 30 passed, 30 total
+Tests:       461 passed, 461 total
+Snapshots:   0 total
+Time:        25.342 s
+Ran all test suites.

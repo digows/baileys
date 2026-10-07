@@ -1,0 +1,82 @@
+{
+  "implementationCommit": "acafa2fd5a427f6e202fbff8bbc21a55f539ce9c",
+  "branch": "feat/native-interactive-messages",
+  "baselineCommit": "0af2386292907f7d9742d8d41f830d8c48208fa1",
+  "packageVersion": "7.0.0-rc14",
+  "nodeVersion": "v26.8.1",
+  "recordedAtUtc": "2026-10-07T04:44:14.960Z",
+  "checks": [
+    {
+      "name": "install",
+      "command": "corepack yarn install --immutable",
+      "exitCode": 0,
+      "log": "install.log"
+    },
+    {
+      "name": "build",
+      "command": "corepack yarn build",
+      "exitCode": 0,
+      "log": "build.log"
+    },
+    {
+      "name": "lint",
+      "command": "corepack yarn lint",
+      "exitCode": 0,
+      "log": "lint.log"
+    },
+    {
+      "name": "format",
+      "command": "corepack yarn exec prettier --check src/Types/Message.ts src/Utils/interactive-messages.ts src/Utils/messages.ts src/Socket/messages-send.ts src/__tests__/TestUtils/interactive-fixtures.ts src/__tests__/Utils/interactive-messages.test.ts src/__tests__/Socket/interactive-messages.test.ts Example/native-interactive-messages.ts NATIVE_INTERACTIVE_MESSAGES.md",
+      "exitCode": 0,
+      "log": "format.log"
+    },
+    {
+      "name": "example-typecheck",
+      "command": "corepack yarn exec tsc --noEmit --strict --strictNullChecks --noUncheckedIndexedAccess --verbatimModuleSyntax --module esnext --moduleResolution bundler --target es2020 --esModuleInterop --skipLibCheck --resolveJsonModule src/Types/globals.d.ts Example/native-interactive-messages.ts",
+      "exitCode": 0,
+      "log": "example-typecheck.log"
+    },
+    {
+      "name": "evidence",
+      "command": "node ./baileys-native-interactive-evidence/verify-evidence.mjs \"$PWD/lib/index.js\"",
+      "exitCode": 0,
+      "log": "evidence.log"
+    },
+    {
+      "name": "diff",
+      "command": "git diff --check && git diff --check 0af2386292907f7d9742d8d41f830d8c48208fa1 HEAD",
+      "exitCode": 0,
+      "log": "diff.log"
+    },
+    {
+      "name": "tests",
+      "command": "TMPDIR='/tmp/baileys-native-e0RW4V' corepack yarn test --runInBand",
+      "exitCode": 0,
+      "log": "tests.log"
+    }
+  ],
+  "testSuites": 30,
+  "tests": 461,
+  "addedFeatureTests": 54,
+  "lintErrors": 0,
+  "lintWarnings": 103,
+  "evidence": {
+    "profileRoundTrips": 63,
+    "binaryNodeRoundTrips": 59,
+    "responseRoundTrips": 12,
+    "historicalFileHashes": "All manifest byte counts and SHA-256 values preserved",
+    "historicalPackage": "../baileys-native-interactive-evidence",
+    "verifierNote": "The original verifier reports the historical profile libraryRevision; this execution loaded lib/index.js built from implementationCommit above."
+  },
+  "limitations": [
+    "No new live WhatsApp validation or e2e mock-server run.",
+    "N47: Web functionality reported; iOS displays text and two images with selection disabled. Horizontal navigation unconfirmed. No N47 callback captured.",
+    "Independent review, tag/release and upstream PR pending. No consumer/downstream changes."
+  ],
+  "notes": [
+    "Transport and cryptographic operations are mocked in send/decode feature tests; existing message builders, relay fan-out, own-device wrapping, decode and buffered event emitter are exercised.",
+    "Logs are implementation-commit measurements, separate from historical transport/client observations. Trailing blank EOF whitespace was removed from lint.log for the repository whitespace check.",
+    "The standalone example typecheck includes the repository ambient declaration src/Types/globals.d.ts.",
+    "The existing README received only the feature links; configured format verification covers changed TypeScript and new feature documentation without reformatting the existing README."
+  ]
+}

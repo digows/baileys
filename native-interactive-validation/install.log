@@ -1,0 +1,13 @@
+➤ YN0000: · Yarn 4.9.2
+➤ YN0000: ┌ Resolution step
+➤ YN0000: └ Completed
+➤ YN0000: ┌ Post-resolution validation
+➤ YN0060: │ typescript is listed by your project with version 5.9.2 (p8720d), which doesn't satisfy what typedoc and other dependencies request (~5.0.0 || ~5.1.0 || ~5.2.0 || ~5.3.0 || ~5.4.0 || ~5.5.0 || ~5.6.0 || ~5.7.0 || ~5.8.0).
+➤ YN0002: │ baileys@workspace:. doesn't provide esbuild (p46a96), requested by esbuild-register and other dependencies.
+➤ YN0086: │ Some peer dependencies are incorrectly met by your project; run yarn explain peer-requirements <hash> for details, where <hash> is the six-letter p-prefixed code.
+➤ YN0000: └ Completed
+➤ YN0000: ┌ Fetch step
+➤ YN0000: └ Completed in 0s 566ms
+➤ YN0000: ┌ Link step
+➤ YN0000: └ Completed in 0s 312ms
+➤ YN0000: · Done with warnings in 1s 153ms
