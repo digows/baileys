@@ -211,5 +211,6 @@ delivery. Offline fixtures and checks do not substitute for live client checks.
 View-once media, other action kinds, video cards, payment/form flows and solving
 the iOS carousel selection limitation are outside this contribution.
 
-Drafted with Codex. Independent review and release are pending; no human code
-review, publication or new live validation is claimed here.
+Drafted with Codex. Independent Codex review and measured checks are recorded in
+[native-interactive-review](./native-interactive-review/README.md). Human code
+review and new live client validation are not claimed.

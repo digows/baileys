@@ -77,6 +77,7 @@
     "Transport and cryptographic operations are mocked in send/decode feature tests; existing message builders, relay fan-out, own-device wrapping, decode and buffered event emitter are exercised.",
     "Logs are implementation-commit measurements, separate from historical transport/client observations. Trailing blank EOF whitespace was removed from lint.log for the repository whitespace check.",
     "The standalone example typecheck includes the repository ambient declaration src/Types/globals.d.ts.",
-    "The existing README received only the feature links; configured format verification covers changed TypeScript and new feature documentation without reformatting the existing README."
+    "The existing README received only the feature links; configured format verification covers changed TypeScript and new feature documentation without reformatting the existing README.",
+    "Absolute checkout paths and local hostname normalized in public logs; diagnostic content, counts, statuses and timestamps retained."
   ]
 }

@@ -19,3 +19,6 @@ claimed. Review, tag/release and upstream PR are pending.
 
 These files are validation attachments added after the implementation checks;
 they do not modify the source or historical fixtures measured by those checks.
+
+Absolute checkout paths and the local hostname were normalized for public
+attachments. Diagnostic content, counts, exit codes and timestamps are retained.

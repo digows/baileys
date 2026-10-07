@@ -1,0 +1,31 @@
+{
+  "checkedArtifact": "baileys-review.tgz",
+  "noLiveConnectionOrUpload": true,
+  "verifiedProfiles": [
+    {
+      "sampleId": "N23",
+      "packagedApiProfileMatches": true,
+      "packagedRelayNodesMatch": true
+    },
+    {
+      "sampleId": "N25",
+      "packagedApiProfileMatches": true,
+      "packagedRelayNodesMatch": true
+    },
+    {
+      "sampleId": "N03",
+      "packagedApiProfileMatches": true,
+      "packagedRelayNodesMatch": true
+    },
+    {
+      "sampleId": "N04",
+      "packagedApiProfileMatches": true,
+      "packagedRelayNodesMatch": true
+    },
+    {
+      "sampleId": "N47",
+      "packagedApiProfileMatches": true,
+      "packagedRelayNodesMatch": true
+    }
+  ]
+}

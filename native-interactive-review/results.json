@@ -1,0 +1,96 @@
+{
+  "reviewedCommit": "86a4d013b5498bc318d016cf121eb5641217378b",
+  "implementationCommit": "acafa2fd5a427f6e202fbff8bbc21a55f539ce9c",
+  "baselineCommit": "0af2386292907f7d9742d8d41f830d8c48208fa1",
+  "sourceTreeGitObject": "d8e9bde67b7714d0e66133c71e8486bee8cd6f3c",
+  "packageManifestGitObject": "473e37b3af1221f4b3813ada01f9ff00e01f9da7",
+  "exampleGitObject": "620b3bb9b46f05fd57371392f3d139afb5570172",
+  "reviewKind": "Independent Codex source/test review and independently executed checks; no human review claimed",
+  "reviewResult": "Accepted for the approved five profiles",
+  "recordedAtUtc": "2026-10-07T04:54:16.411716+00:00",
+  "nodeVersion": "v26.8.1",
+  "checks": [
+    {
+      "name": "build",
+      "command": "corepack yarn build",
+      "exitCode": 0,
+      "log": "build.log"
+    },
+    {
+      "name": "lint",
+      "command": "corepack yarn lint",
+      "exitCode": 0,
+      "log": "lint.log"
+    },
+    {
+      "name": "tests",
+      "command": "TMPDIR=<review temporary directory> corepack yarn test --runInBand",
+      "exitCode": 0,
+      "log": "tests.log"
+    },
+    {
+      "name": "format",
+      "command": "corepack yarn exec prettier --check src/Types/Message.ts src/Utils/interactive-messages.ts src/Utils/messages.ts src/Socket/messages-send.ts src/__tests__/TestUtils/interactive-fixtures.ts src/__tests__/Utils/interactive-messages.test.ts src/__tests__/Socket/interactive-messages.test.ts Example/native-interactive-messages.ts NATIVE_INTERACTIVE_MESSAGES.md",
+      "exitCode": 0,
+      "log": "format.log"
+    },
+    {
+      "name": "example-typecheck",
+      "command": "corepack yarn exec tsc --noEmit --strict --strictNullChecks --noUncheckedIndexedAccess --verbatimModuleSyntax --module esnext --moduleResolution bundler --target es2020 --esModuleInterop --skipLibCheck --resolveJsonModule src/Types/globals.d.ts Example/native-interactive-messages.ts",
+      "exitCode": 0,
+      "log": "example-typecheck.log"
+    },
+    {
+      "name": "evidence",
+      "command": "node ./baileys-native-interactive-evidence/verify-evidence.mjs \"$PWD/lib/index.js\"",
+      "exitCode": 0,
+      "log": "evidence.log"
+    },
+    {
+      "name": "pack",
+      "command": "corepack yarn pack --out <review temporary directory>/baileys-review.tgz",
+      "exitCode": 0,
+      "log": "pack.log"
+    },
+    {
+      "name": "artifact-smoke",
+      "command": "node ./native-interactive-review/artifact-smoke.mjs <unpacked package>/lib/index.js",
+      "exitCode": 0,
+      "log": "artifact-smoke.json"
+    },
+    {
+      "name": "diff",
+      "command": "git diff --check 0af2386292907f7d9742d8d41f830d8c48208fa1..86a4d013b5498bc318d016cf121eb5641217378b",
+      "exitCode": 0,
+      "log": null
+    }
+  ],
+  "testSuites": 30,
+  "tests": 461,
+  "lintErrors": 0,
+  "lintWarnings": 103,
+  "profileRoundTrips": 63,
+  "binaryNodeRoundTrips": 59,
+  "responseRoundTrips": 12,
+  "historicalAttachments": "Byte-identical to the supplied canonical package; manifest hashes verified",
+  "checkedArtifactSha256": "8ed55c67842a677ba1e9bc11b409c68f8319c4e45e2b08d5fee4ed5d7bcce19e",
+  "checkedArtifactEntries": 406,
+  "checkedArtifactProfiles": [
+    "N23",
+    "N25",
+    "N03",
+    "N04",
+    "N47"
+  ],
+  "sourceFindings": [],
+  "attachmentCorrections": [
+    "Normalized absolute checkout paths and local hostname in public validation logs"
+  ],
+  "limitations": [
+    "No new live WhatsApp or e2e mock-server validation",
+    "N47 iOS selection disabled, horizontal navigation unconfirmed, no captured N47 callback",
+    "Protocol metadata is experimental interoperability evidence, not an official protocol guarantee"
+  ],
+  "normalization": "Absolute local paths and local hostname replaced in public logs; check commands use disclosed temporary-path placeholders. Exit codes, diagnostics, counts and timestamps retained.",
+  "publicationNote": "The publication commit adds only documentation/review attachments and log normalization. Source tree, package manifest and example must match the Git objects above."
+}

@@ -17,13 +17,13 @@ PASS src/__tests__/Utils/process-message.test.ts
 PASS src/__tests__/Utils/event-buffer.test.ts
 PASS src/__tests__/Utils/app-state-sync-resilience.test.ts
 PASS src/__tests__/Utils/lt-hash-generator.test.ts
-{"level":30,"time":"2026-10-07T04:43:02.947Z","pid":4178,"hostname":"Rodrigos-MacBook-Office.local","class":"baileys","msg":"Connection is now AwaitingInitialSync, buffering events"}
-{"level":30,"time":"2026-10-07T04:43:02.947Z","pid":4178,"hostname":"Rodrigos-MacBook-Office.local","class":"baileys","msg":"Reconnection with existing sync data, skipping history sync wait. Transitioning to Online."}
-{"level":30,"time":"2026-10-07T04:43:03.015Z","pid":4178,"hostname":"Rodrigos-MacBook-Office.local","class":"baileys","trace":"Error: Test completed\n    at Object.<anonymous> (/Volumes/Files/Development/workspaces/OSS/baileys/src/__tests__/binary/reconnection-sync-skip.test.ts:48:18)","msg":"connection errored"}
-{"level":30,"time":"2026-10-07T04:43:03.087Z","pid":4178,"hostname":"Rodrigos-MacBook-Office.local","class":"baileys","msg":"Connection is now AwaitingInitialSync, buffering events"}
-{"level":30,"time":"2026-10-07T04:43:03.087Z","pid":4178,"hostname":"Rodrigos-MacBook-Office.local","class":"baileys","msg":"First connection, awaiting history sync notification with a 20s timeout."}
+{"level":30,"time":"2026-10-07T04:43:02.947Z","pid":4178,"hostname":"[local-host]","class":"baileys","msg":"Connection is now AwaitingInitialSync, buffering events"}
+{"level":30,"time":"2026-10-07T04:43:02.947Z","pid":4178,"hostname":"[local-host]","class":"baileys","msg":"Reconnection with existing sync data, skipping history sync wait. Transitioning to Online."}
+{"level":30,"time":"2026-10-07T04:43:03.015Z","pid":4178,"hostname":"[local-host]","class":"baileys","trace":"Error: Test completed\n    at Object.<anonymous> (./src/__tests__/binary/reconnection-sync-skip.test.ts:48:18)","msg":"connection errored"}
+{"level":30,"time":"2026-10-07T04:43:03.087Z","pid":4178,"hostname":"[local-host]","class":"baileys","msg":"Connection is now AwaitingInitialSync, buffering events"}
+{"level":30,"time":"2026-10-07T04:43:03.087Z","pid":4178,"hostname":"[local-host]","class":"baileys","msg":"First connection, awaiting history sync notification with a 20s timeout."}
 PASS src/__tests__/binary/reconnection-sync-skip.test.ts
-{"level":30,"time":"2026-10-07T04:43:03.139Z","pid":4178,"hostname":"Rodrigos-MacBook-Office.local","class":"baileys","trace":"Error: Test completed\n    at Object.<anonymous> (/Volumes/Files/Development/workspaces/OSS/baileys/src/__tests__/binary/reconnection-sync-skip.test.ts:83:18)","msg":"connection errored"}
+{"level":30,"time":"2026-10-07T04:43:03.139Z","pid":4178,"hostname":"[local-host]","class":"baileys","trace":"Error: Test completed\n    at Object.<anonymous> (./src/__tests__/binary/reconnection-sync-skip.test.ts:83:18)","msg":"connection errored"}
 PASS src/__tests__/proto-tojson-long.test.ts
 PASS src/__tests__/Utils/decode-wa-message.test.ts
 PASS src/__tests__/Socket/groups.test.ts
@@ -31,10 +31,10 @@ PASS src/__tests__/Utils/generics.test.ts
 PASS src/__tests__/Utils/signal.test.ts
 PASS src/__tests__/Utils/app-state-version.test.ts
 PASS src/__tests__/binary/connection-deadlock.test.ts
-{"level":40,"time":"2026-10-07T04:43:05.022Z","pid":4178,"hostname":"Rodrigos-MacBook-Office.local","class":"baileys","msg":"⚠️ DANGER: DISABLING ALL SYNC BY shouldSyncHistoryMsg PREVENTS BAILEYS FROM ACCESSING INITIAL LID MAPPINGS, LEADING TO INSTABILIY AND SESSION ERRORS"}
-{"level":30,"time":"2026-10-07T04:43:05.026Z","pid":4178,"hostname":"Rodrigos-MacBook-Office.local","class":"baileys","msg":"Connection is now AwaitingInitialSync, buffering events"}
-{"level":30,"time":"2026-10-07T04:43:05.026Z","pid":4178,"hostname":"Rodrigos-MacBook-Office.local","class":"baileys","msg":"History sync is disabled by config, not waiting for notification. Transitioning to Online."}
-{"level":30,"time":"2026-10-07T04:43:05.082Z","pid":4178,"hostname":"Rodrigos-MacBook-Office.local","class":"baileys","trace":"Error: Test completed\n    at Object.<anonymous> (/Volumes/Files/Development/workspaces/OSS/baileys/src/__tests__/binary/connection-deadlock.test.ts:51:18)","msg":"connection errored"}
+{"level":40,"time":"2026-10-07T04:43:05.022Z","pid":4178,"hostname":"[local-host]","class":"baileys","msg":"⚠️ DANGER: DISABLING ALL SYNC BY shouldSyncHistoryMsg PREVENTS BAILEYS FROM ACCESSING INITIAL LID MAPPINGS, LEADING TO INSTABILIY AND SESSION ERRORS"}
+{"level":30,"time":"2026-10-07T04:43:05.026Z","pid":4178,"hostname":"[local-host]","class":"baileys","msg":"Connection is now AwaitingInitialSync, buffering events"}
+{"level":30,"time":"2026-10-07T04:43:05.026Z","pid":4178,"hostname":"[local-host]","class":"baileys","msg":"History sync is disabled by config, not waiting for notification. Transitioning to Online."}
+{"level":30,"time":"2026-10-07T04:43:05.082Z","pid":4178,"hostname":"[local-host]","class":"baileys","trace":"Error: Test completed\n    at Object.<anonymous> (./src/__tests__/binary/connection-deadlock.test.ts:51:18)","msg":"connection errored"}
 PASS src/__tests__/Signal/lid-mapping.test.ts
 PASS src/__tests__/Utils/auth-utils.test.ts
 PASS src/__tests__/Signal/Group/sender-key-state-regression.test.ts
