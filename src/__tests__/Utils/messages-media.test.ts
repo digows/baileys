@@ -1,3 +1,4 @@
+import { createCipheriv, randomBytes } from 'crypto'
 import * as fs from 'fs'
 import * as http from 'http'
 import { Agent } from 'https'
@@ -6,7 +7,106 @@ import * as path from 'path'
 import { Readable } from 'stream'
 import type { MediaConnInfo, SocketConfig } from '../../Types'
 import type { ILogger } from '../../Utils/logger'
-import { encryptedStream, getWAUploadToServer, type UploadParams, uploadWithNodeHttp } from '../../Utils/messages-media'
+import {
+	downloadEncryptedContent,
+	encryptedStream,
+	getMediaKeys,
+	getWAUploadToServer,
+	type UploadParams,
+	uploadWithNodeHttp
+} from '../../Utils/messages-media'
+
+describe('downloadEncryptedContent', () => {
+	it.each(['before_headers', 'partial_transfer', 'upstream_failure', 'complete'] as const)(
+		'preserves cancellation, upstream failures and original bytes at %s',
+		async phase => {
+			const original = Buffer.alloc(128 * 1024, 97)
+			const keys = await getMediaKeys(randomBytes(32), 'document')
+			const cipher = createCipheriv('aes-256-cbc', keys.cipherKey, keys.iv)
+			const encrypted = Buffer.concat([cipher.update(original), cipher.final()])
+
+			let acknowledgeRequest: () => void = () => {}
+
+			let acknowledgeTransfer: () => void = () => {}
+
+			let acknowledgeClose: () => void = () => {}
+
+			const requestStarted = new Promise<void>(resolve => {
+				acknowledgeRequest = resolve
+			})
+			const transferStarted = new Promise<void>(resolve => {
+				acknowledgeTransfer = resolve
+			})
+			const responseClosed = new Promise<void>(resolve => {
+				acknowledgeClose = resolve
+			})
+			let response: http.ServerResponse | undefined
+			const server = http.createServer((_request, currentResponse) => {
+				response = currentResponse
+				currentResponse.once('close', acknowledgeClose)
+				acknowledgeRequest()
+				if (phase !== 'before_headers') {
+					currentResponse.writeHead(200, { 'content-length': encrypted.length })
+					if (phase === 'complete') currentResponse.end(encrypted)
+					else currentResponse.write(encrypted.subarray(0, 64 * 1024))
+				}
+			})
+			await new Promise<void>(resolve => server.listen(0, '127.0.0.1', resolve))
+			const address = server.address()
+			if (address === null || typeof address === 'string') throw new Error('Fixture server has no port')
+			const controller = new AbortController()
+			let output: Readable | undefined
+			const chunks: Buffer[] = []
+			const operation = (async () => {
+				output = await downloadEncryptedContent(`http://127.0.0.1:${address.port}/media`, keys, {
+					options: { signal: controller.signal }
+				})
+				for await (const chunk of output) {
+					chunks.push(chunk)
+					acknowledgeTransfer()
+				}
+
+				return Buffer.concat(chunks)
+			})()
+			const rejection =
+				phase === 'complete'
+					? undefined
+					: phase === 'upstream_failure'
+						? expect(operation).rejects.toThrow()
+						: expect(operation).rejects.toMatchObject({ name: 'AbortError' })
+			let timeout: ReturnType<typeof setTimeout> | undefined
+			const deadline = new Promise<never>((_resolve, reject) => {
+				timeout = setTimeout(() => reject(new Error('Media operation did not settle')), 2_000)
+			})
+			try {
+				await Promise.race([requestStarted, deadline])
+				if (phase === 'complete') {
+					expect(await Promise.race([operation, deadline])).toEqual(original)
+				} else {
+					if (phase !== 'before_headers') {
+						await Promise.race([transferStarted, deadline])
+						expect(Buffer.concat(chunks).length).toBeGreaterThan(0)
+					}
+
+					if (phase === 'upstream_failure') response?.destroy()
+					else controller.abort()
+					await Promise.race([rejection, deadline])
+					if (output !== undefined) expect(output.destroyed).toBe(true)
+				}
+
+				await Promise.race([responseClosed, deadline])
+			} finally {
+				clearTimeout(timeout)
+				controller.abort()
+				output?.destroy()
+				server.closeAllConnections()
+				await new Promise<void>((resolve, reject) => server.close(error => (error ? reject(error) : resolve())))
+				await Promise.allSettled([operation, rejection])
+			}
+		},
+		10_000
+	)
+})
 
 const createTempFile = async (content: string): Promise<string> => {
 	const filePath = path.join(os.tmpdir(), `test-upload-${Date.now()}.txt`)

@@ -8,6 +8,7 @@ import type { IAudioMetadata } from 'music-metadata'
 import { tmpdir } from 'os'
 import { join } from 'path'
 import { Readable, Transform } from 'stream'
+import { pipeline } from 'stream/promises'
 import { URL } from 'url'
 import { proto } from '../../WAProto/index.js'
 import { DEFAULT_ORIGIN, MEDIA_HKDF_KEY_MAPPING, MEDIA_PATH_MAP, type MediaType } from '../Defaults'
@@ -366,6 +367,7 @@ export const getHttpStream = async (url: string | URL, options: RequestInit & { 
 	const response = await fetch(url.toString(), {
 		dispatcher: options.dispatcher,
 		method: 'GET',
+		signal: options.signal,
 		headers: options.headers as HeadersInit
 	})
 	if (!response.ok) {
@@ -649,7 +651,8 @@ export const downloadEncryptedContent = async (
 			}
 		}
 	})
-	return fetched.pipe(output, { end: true })
+	void pipeline(fetched, output, { signal: options?.signal ?? undefined }).catch(error => output.destroy(error))
+	return output
 }
 
 export function extensionForMediaMessage(message: WAMessageContent) {
